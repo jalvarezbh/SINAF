@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64DDC636-D2A1-4B33-B757-7CA4190A52A1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetoWeb</RootNamespace>
+    <AssemblyName>ProjetoWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ErikEJ.SqlCe, Version=2.1.6.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\ErikEJ.SqlCe.dll</HintPath>
+    </Reference>
+    <Reference Include="FTP_Windows, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\FTP_Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\WebControls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bloqueioColetor.aspx" />
+    <Content Include="cadastroAgendamento.aspx" />
+    <Content Include="cadastroColetor.aspx" />
+    <Content Include="cadastroFilial.aspx" />
+    <Content Include="cadastroParametro.aspx" />
+    <Content Include="cadastroPerfilCargo.aspx" />
+    <Content Include="cadastroPlano.aspx" />
+    <Content Include="cadastroSenha.aspx" />
+    <Content Include="cadastroVendedorColetor.aspx" />
+    <Content Include="consultaAgendamento.aspx" />
+    <Content Include="consultaColetor.aspx" />
+    <Content Include="Controle\Bloqueio.ascx" />
+    <Content Include="Controle\Menu.ascx" />
+    <Content Include="Controle\MenuTreeView.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Controle\SimuladorPlanoTela1.ascx" />
+    <Content Include="default.aspx" />
+    <Content Include="DLL\AjaxControlToolkit.dll" />
+    <Content Include="DLL\ErikEJ.SqlCe.dll" />
+    <Content Include="DLL\FTP_Windows.dll" />
+    <Content Include="DLL\System.Data.SqlServerCe.dll" />
+    <Content Include="DLL\WebControls.dll" />
+    <Content Include="downloadArquivo.aspx" />
+    <Content Include="exibeRelatorio.aspx" />
+    <Content Include="filtroHistoricoSimulador.aspx" />
+    <Content Include="filtroVendedorColetor.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\accept20.ico" />
+    <Content Include="Images\accept28.ico" />
+    <Content Include="Images\add20.ico" />
+    <Content Include="Images\Agua.jpg" />
+    <Content Include="Images\back28.ico" />
+    <Content Include="Images\coletor32.ico" />
+    <Content Include="Images\Conteudo.png" />
+    <Content Include="Images\ConteudoDireita.png" />
+    <Content Include="Images\ConteudoEsquerda.png" />
+    <Content Include="Images\down28.ico" />
+    <Content Include="Images\download32.ico" />
+    <Content Include="Images\Fundo.jpg" />
+    <Content Include="Images\ImageButtonAdicionar.ico" />
+    <Content Include="Images\ImageButtonPesquisar.ico" />
+    <Content Include="Images\ImageButtonSalvar.ico" />
+    <Content Include="Images\ImageButtonVoltar.ico" />
+    <Content Include="Images\info20.ico" />
+    <Content Include="Images\lock20.ico" />
+    <Content Include="Images\lock_off20.ico" />
+    <Content Include="Images\logo64.png" />
+    <Content Include="Images\logo90.png" />
+    <Content Include="Images\LogoCliente.png" />
+    <Content Include="Images\Menu.png" />
+    <Content Include="Images\MenuDireita.png" />
+    <Content Include="Images\MenuEsquerda.png" />
+    <Content Include="Images\note_editGrid.ico" />
+    <Content Include="Images\note_removeGrid.ico" />
+    <Content Include="Images\processando6.gif" />
+    <Content Include="Images\repeat32.ico" />
+    <Content Include="Images\search14.ico" />
+    <Content Include="Images\sinafemail.png" />
+    <Content Include="Images\upload32.ico" />
+    <Content Include="Images\vendedor32.ico" />
+    <Content Include="login.aspx" />
+    <Content Include="relatorioColetor.aspx" />
+    <Content Include="Scripts\autoCurrency.js" />
+    <Content Include="Scripts\css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Scripts\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Scripts\css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\css\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Scripts\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\css\jquery-ui.css" />
+    <Content Include="Scripts\css\jquery.ui.accordion.css" />
+    <Content Include="Scripts\css\jquery.ui.all.css" />
+    <Content Include="Scripts\css\jquery.ui.autocomplete.css" />
+    <Content Include="Scripts\css\jquery.ui.base.css" />
+    <Content Include="Scripts\css\jquery.ui.button.css" />
+    <Content Include="Scripts\css\jquery.ui.core.css" />
+    <Content Include="Scripts\css\jquery.ui.datepicker.css" />
+    <Content Include="Scripts\css\jquery.ui.dialog.css" />
+    <Content Include="Scripts\css\jquery.ui.progressbar.css" />
+    <Content Include="Scripts\css\jquery.ui.resizable.css" />
+    <Content Include="Scripts\css\jquery.ui.selectable.css" />
+    <Content Include="Scripts\css\jquery.ui.slider.css" />
+    <Content Include="Scripts\css\jquery.ui.tabs.css" />
+    <Content Include="Scripts\css\jquery.ui.theme.css" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-2.0.0.js" />
+    <Content Include="Scripts\jquery-2.0.0.min.js" />
+    <Content Include="Scripts\jquery-ui-timepicker-addon.js" />
+    <Content Include="Scripts\jquery-ui.min.1.7.2.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.cycle.lite.js" />
+    <Content Include="Scripts\jquery.jgrowl_minimized.js" />
+    <Content Include="Scripts\jquery.mask.js" />
+    <Content Include="Scripts\jquery.min.1.5.js" />
+    <Content Include="Scripts\jquery.simplemodal.js" />
+    <Content Include="Scripts\jquery.ui\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\jquery.ui\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\jquery.ui\jquery.ui.mouse.js" />
+    <Content Include="Scripts\jquery.ui\jquery.ui.sortable.js" />
+    <Content Include="Scripts\jquery.ui\jquery.ui.widget.js" />
+    <Content Include="Scripts\WebControls.aspx" />
+    <Content Include="Scripts\WebControls.js" />
+    <Content Include="Service\SyncColetor.asmx" />
+    <Content Include="Service\SyncSINAF.asmx" />
+    <Content Include="simuladorPlano.aspx" />
+    <Content Include="Styles\Principal.css" />
+    <Content Include="Template\EmailEsqueceuSenha.htm" />
+    <Content Include="Site.Master" />
+    <Content Include="UPDATE\1_0_3_3.txt" />
+    <Content Include="UPDATE\ProjetoInstall.CAB" />
+    <Content Include="UPDATE\1_0_3_0.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Template\ExemploTemplatePlanoFamilia.xls" />
+    <Content Include="Template\ExemploTemplatePlanoSenior.xls" />
+    <Content Include="Template\ExemploTemplatePlanoSeniorCasal.xls" />
+    <Content Include="Template\TemplateFilial.xls" />
+    <Content Include="Template\TemplatePlanoFamilia.xls" />
+    <Content Include="Template\TemplatePlanoSenior.xls" />
+    <Content Include="Template\TemplatePlanoSeniorCasal.xls" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bloqueioColetor.aspx.cs">
+      <DependentUpon>bloqueioColetor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bloqueioColetor.aspx.designer.cs">
+      <DependentUpon>bloqueioColetor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroAgendamento.aspx.cs">
+      <DependentUpon>cadastroAgendamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroAgendamento.aspx.designer.cs">
+      <DependentUpon>cadastroAgendamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroColetor.aspx.cs">
+      <DependentUpon>cadastroColetor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroColetor.aspx.designer.cs">
+      <DependentUpon>cadastroColetor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroFilial.aspx.cs">
+      <DependentUpon>cadastroFilial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroFilial.aspx.designer.cs">
+      <DependentUpon>cadastroFilial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroParametro.aspx.cs">
+      <DependentUpon>cadastroParametro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroParametro.aspx.designer.cs">
+      <DependentUpon>cadastroParametro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroPerfilCargo.aspx.cs">
+      <DependentUpon>cadastroPerfilCargo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroPerfilCargo.aspx.designer.cs">
+      <DependentUpon>cadastroPerfilCargo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroPlano.aspx.cs">
+      <DependentUpon>cadastroPlano.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroPlano.aspx.designer.cs">
+      <DependentUpon>cadastroPlano.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroSenha.aspx.cs">
+      <DependentUpon>cadastroSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroSenha.aspx.designer.cs">
+      <DependentUpon>cadastroSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroVendedorColetor.aspx.cs">
+      <DependentUpon>cadastroVendedorColetor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroVendedorColetor.aspx.designer.cs">
+      <DependentUpon>cadastroVendedorColetor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consultaAgendamento.aspx.cs">
+      <DependentUpon>consultaAgendamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consultaAgendamento.aspx.designer.cs">
+      <DependentUpon>consultaAgendamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consultaColetor.aspx.cs">
+      <DependentUpon>consultaColetor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consultaColetor.aspx.designer.cs">
+      <DependentUpon>consultaColetor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controle\Bloqueio.ascx.cs">
+      <DependentUpon>Bloqueio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controle\Bloqueio.ascx.designer.cs">
+      <DependentUpon>Bloqueio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controle\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controle\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controle\SimuladorPlanoTela1.ascx.cs">
+      <DependentUpon>SimuladorPlanoTela1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controle\SimuladorPlanoTela1.ascx.designer.cs">
+      <DependentUpon>SimuladorPlanoTela1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="downloadArquivo.aspx.cs">
+      <DependentUpon>downloadArquivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="downloadArquivo.aspx.designer.cs">
+      <DependentUpon>downloadArquivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="exibeRelatorio.aspx.cs">
+      <DependentUpon>exibeRelatorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="exibeRelatorio.aspx.designer.cs">
+      <DependentUpon>exibeRelatorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="filtroHistoricoSimulador.aspx.cs">
+      <DependentUpon>filtroHistoricoSimulador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="filtroHistoricoSimulador.aspx.designer.cs">
+      <DependentUpon>filtroHistoricoSimulador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="filtroVendedorColetor.aspx.cs">
+      <DependentUpon>filtroVendedorColetor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="filtroVendedorColetor.aspx.designer.cs">
+      <DependentUpon>filtroVendedorColetor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="relatorioColetor.aspx.cs">
+      <DependentUpon>relatorioColetor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="relatorioColetor.aspx.designer.cs">
+      <DependentUpon>relatorioColetor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\WebControls.aspx.cs">
+      <DependentUpon>WebControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\WebControls.aspx.designer.cs">
+      <DependentUpon>WebControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service\ServicoColetor.cs" />
+    <Compile Include="Service\ServicoSINAF.cs" />
+    <Compile Include="Service\SyncColetor.asmx.cs">
+      <DependentUpon>SyncColetor.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\SyncSINAF.asmx.cs">
+      <DependentUpon>SyncSINAF.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="simuladorPlano.aspx.cs">
+      <DependentUpon>simuladorPlano.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="simuladorPlano.aspx.designer.cs">
+      <DependentUpon>simuladorPlano.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Sessao.cs" />
+    <Compile Include="Util\Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoController\ProjetoController.csproj">
+      <Project>{e1534ce9-052d-476b-b5a0-c89968afa43f}</Project>
+      <Name>ProjetoController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjetoVO\ProjetoVO.csproj">
+      <Project>{3ec2539c-9193-4eb4-89e3-1c419cdc2679}</Project>
+      <Name>ProjetoVO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BANCO\" />
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\HistoricoSimulador.rdlc" />
+    <Content Include="Reports\VendedorColetor.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62498</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SetDateTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="SetDateTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetDateTimeResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerSenhaHash">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerSenhaHashResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerSenhaHashResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificaColetorAtivo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numeroSerie" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificaColetorAtivoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VerificaColetorAtivoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportarBancoCorreios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numeroSerie" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="siglaUF" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="versaoAtual" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportarBancoCorreiosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportarBancoCorreiosResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="versaoNova" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportarBancoCorreiosTeste">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numeroSerie" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="siglaUF" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="versaoAtual" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportarBancoCorreiosTesteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportarBancoCorreiosTesteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportarBanco">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numeroSerie" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="versao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportarBancoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportarBancoResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numeroDownload" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportarBanco">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numeroSerie" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="versao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportarBancoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExportarBancoResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="numeroUpload" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportarBancoTeste">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numeroSerie" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="versao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportarBancoTesteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportarBancoTesteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportarBancoTeste">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numeroSerie" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="versao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportarBancoTesteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExportarBancoTesteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluirBackupColetor">
+        <s:complexType />
+      </s:element>
+      <s:element name="ExcluirBackupColetorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExcluirBackupColetorResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificarAtualizacaoDisponivel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="coletor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificarAtualizacaoDisponivelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerificarAtualizacaoDisponivelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SetDateTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetDateTime" />
+  </wsdl:message>
+  <wsdl:message name="SetDateTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerSenhaHashSoapIn">
+    <wsdl:part name="parameters" element="tns:VerSenhaHash" />
+  </wsdl:message>
+  <wsdl:message name="VerSenhaHashSoapOut">
+    <wsdl:part name="parameters" element="tns:VerSenhaHashResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerificaColetorAtivoSoapIn">
+    <wsdl:part name="parameters" element="tns:VerificaColetorAtivo" />
+  </wsdl:message>
+  <wsdl:message name="VerificaColetorAtivoSoapOut">
+    <wsdl:part name="parameters" element="tns:VerificaColetorAtivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportarBancoCorreiosSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportarBancoCorreios" />
+  </wsdl:message>
+  <wsdl:message name="ImportarBancoCorreiosSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportarBancoCorreiosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportarBancoCorreiosTesteSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportarBancoCorreiosTeste" />
+  </wsdl:message>
+  <wsdl:message name="ImportarBancoCorreiosTesteSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportarBancoCorreiosTesteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportarBancoSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportarBanco" />
+  </wsdl:message>
+  <wsdl:message name="ImportarBancoSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportarBancoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportarBancoSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportarBanco" />
+  </wsdl:message>
+  <wsdl:message name="ExportarBancoSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportarBancoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportarBancoTesteSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportarBancoTeste" />
+  </wsdl:message>
+  <wsdl:message name="ImportarBancoTesteSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportarBancoTesteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportarBancoTesteSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportarBancoTeste" />
+  </wsdl:message>
+  <wsdl:message name="ExportarBancoTesteSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportarBancoTesteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcluirBackupColetorSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcluirBackupColetor" />
+  </wsdl:message>
+  <wsdl:message name="ExcluirBackupColetorSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcluirBackupColetorResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerificarAtualizacaoDisponivelSoapIn">
+    <wsdl:part name="parameters" element="tns:VerificarAtualizacaoDisponivel" />
+  </wsdl:message>
+  <wsdl:message name="VerificarAtualizacaoDisponivelSoapOut">
+    <wsdl:part name="parameters" element="tns:VerificarAtualizacaoDisponivelResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SyncColetorSoap">
+    <wsdl:operation name="SetDateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Data e Hora.</wsdl:documentation>
+      <wsdl:input message="tns:SetDateTimeSoapIn" />
+      <wsdl:output message="tns:SetDateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerSenhaHash">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Password.</wsdl:documentation>
+      <wsdl:input message="tns:VerSenhaHashSoapIn" />
+      <wsdl:output message="tns:VerSenhaHashSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificaColetorAtivo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Verifica se o Coletor está Ativo.</wsdl:documentation>
+      <wsdl:input message="tns:VerificaColetorAtivoSoapIn" />
+      <wsdl:output message="tns:VerificaColetorAtivoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBancoCorreios">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Importa o Banco do Correio para o Coletor.</wsdl:documentation>
+      <wsdl:input message="tns:ImportarBancoCorreiosSoapIn" />
+      <wsdl:output message="tns:ImportarBancoCorreiosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBancoCorreiosTeste">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Importa o Banco do Correio para o Coletor.</wsdl:documentation>
+      <wsdl:input message="tns:ImportarBancoCorreiosTesteSoapIn" />
+      <wsdl:output message="tns:ImportarBancoCorreiosTesteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBanco">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Importa o Banco para o Coletor.</wsdl:documentation>
+      <wsdl:input message="tns:ImportarBancoSoapIn" />
+      <wsdl:output message="tns:ImportarBancoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportarBanco">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Exportar o Banco para a Web.</wsdl:documentation>
+      <wsdl:input message="tns:ExportarBancoSoapIn" />
+      <wsdl:output message="tns:ExportarBancoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBancoTeste">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Importa o Banco para o Coletor.</wsdl:documentation>
+      <wsdl:input message="tns:ImportarBancoTesteSoapIn" />
+      <wsdl:output message="tns:ImportarBancoTesteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportarBancoTeste">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Exportar o Banco para a Web.</wsdl:documentation>
+      <wsdl:input message="tns:ExportarBancoTesteSoapIn" />
+      <wsdl:output message="tns:ExportarBancoTesteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirBackupColetor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Realiza a exclusão dos arquivos backups.</wsdl:documentation>
+      <wsdl:input message="tns:ExcluirBackupColetorSoapIn" />
+      <wsdl:output message="tns:ExcluirBackupColetorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarAtualizacaoDisponivel">
+      <wsdl:input message="tns:VerificarAtualizacaoDisponivelSoapIn" />
+      <wsdl:output message="tns:VerificarAtualizacaoDisponivelSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SyncColetorSoap" type="tns:SyncColetorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetDateTime">
+      <soap:operation soapAction="http://tempuri.org/SetDateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerSenhaHash">
+      <soap:operation soapAction="http://tempuri.org/VerSenhaHash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificaColetorAtivo">
+      <soap:operation soapAction="http://tempuri.org/VerificaColetorAtivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBancoCorreios">
+      <soap:operation soapAction="http://tempuri.org/ImportarBancoCorreios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBancoCorreiosTeste">
+      <soap:operation soapAction="http://tempuri.org/ImportarBancoCorreiosTeste" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBanco">
+      <soap:operation soapAction="http://tempuri.org/ImportarBanco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportarBanco">
+      <soap:operation soapAction="http://tempuri.org/ExportarBanco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBancoTeste">
+      <soap:operation soapAction="http://tempuri.org/ImportarBancoTeste" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportarBancoTeste">
+      <soap:operation soapAction="http://tempuri.org/ExportarBancoTeste" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirBackupColetor">
+      <soap:operation soapAction="http://tempuri.org/ExcluirBackupColetor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarAtualizacaoDisponivel">
+      <soap:operation soapAction="http://tempuri.org/VerificarAtualizacaoDisponivel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SyncColetorSoap12" type="tns:SyncColetorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetDateTime">
+      <soap12:operation soapAction="http://tempuri.org/SetDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerSenhaHash">
+      <soap12:operation soapAction="http://tempuri.org/VerSenhaHash" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificaColetorAtivo">
+      <soap12:operation soapAction="http://tempuri.org/VerificaColetorAtivo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBancoCorreios">
+      <soap12:operation soapAction="http://tempuri.org/ImportarBancoCorreios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBancoCorreiosTeste">
+      <soap12:operation soapAction="http://tempuri.org/ImportarBancoCorreiosTeste" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBanco">
+      <soap12:operation soapAction="http://tempuri.org/ImportarBanco" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportarBanco">
+      <soap12:operation soapAction="http://tempuri.org/ExportarBanco" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBancoTeste">
+      <soap12:operation soapAction="http://tempuri.org/ImportarBancoTeste" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportarBancoTeste">
+      <soap12:operation soapAction="http://tempuri.org/ExportarBancoTeste" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirBackupColetor">
+      <soap12:operation soapAction="http://tempuri.org/ExcluirBackupColetor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarAtualizacaoDisponivel">
+      <soap12:operation soapAction="http://tempuri.org/VerificarAtualizacaoDisponivel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SyncColetor">
+    <wsdl:port name="SyncColetorSoap" binding="tns:SyncColetorSoap">
+      <soap:address location="http://sql-cabtec/SINAF/Service/SyncColetor.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SyncColetorSoap12" binding="tns:SyncColetorSoap12">
+      <soap12:address location="http://sql-cabtec/SINAF/Service/SyncColetor.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

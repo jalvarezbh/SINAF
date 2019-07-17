@@ -1,0 +1,9 @@
+C:\Cabtec\SINAF\FONTE\SINAF\db_interf_cabtec\bin\Debug\db_interf_cabtec.dacpac
+C:\Cabtec\SINAF\FONTE\SINAF\db_interf_cabtec\bin\Debug\db_interf_cabtec.dll
+C:\Cabtec\SINAF\FONTE\SINAF\db_interf_cabtec\bin\Debug\db_interf_cabtec.pdb
+C:\Cabtec\SINAF\FONTE\SINAF\db_interf_cabtec\obj\Debug\db_interf_cabtec.dll
+C:\Cabtec\SINAF\FONTE\SINAF\db_interf_cabtec\obj\Debug\db_interf_cabtec.pdb
+C:\Cabtec\SINAF\FONTE\SINAF\db_interf_cabtec\obj\Debug\Model.xml
+C:\Cabtec\SINAF\FONTE\SINAF\db_interf_cabtec\obj\Debug\refactor.xml
+C:\Cabtec\SINAF\FONTE\SINAF\db_interf_cabtec\obj\Debug\postdeploy.sql
+C:\Cabtec\SINAF\FONTE\SINAF\db_interf_cabtec\obj\Debug\predeploy.sql

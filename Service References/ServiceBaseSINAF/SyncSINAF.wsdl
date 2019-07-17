@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ObterPrimeiroServico">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObterPrimeiroServicoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ObterPrimeiroServicoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportarBancoCorreio">
+        <s:complexType />
+      </s:element>
+      <s:element name="ImportarBancoCorreioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ImportarBancoCorreioResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportarBaseSINAF">
+        <s:complexType />
+      </s:element>
+      <s:element name="ImportarBaseSINAFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ImportarBaseSINAFResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ObterPrimeiroServicoSoapIn">
+    <wsdl:part name="parameters" element="tns:ObterPrimeiroServico" />
+  </wsdl:message>
+  <wsdl:message name="ObterPrimeiroServicoSoapOut">
+    <wsdl:part name="parameters" element="tns:ObterPrimeiroServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportarBancoCorreioSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportarBancoCorreio" />
+  </wsdl:message>
+  <wsdl:message name="ImportarBancoCorreioSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportarBancoCorreioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportarBaseSINAFSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportarBaseSINAF" />
+  </wsdl:message>
+  <wsdl:message name="ImportarBaseSINAFSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportarBaseSINAFResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SyncSINAFSoap">
+    <wsdl:operation name="ObterPrimeiroServico">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obter Tempo Verficação em Dias.</wsdl:documentation>
+      <wsdl:input message="tns:ObterPrimeiroServicoSoapIn" />
+      <wsdl:output message="tns:ObterPrimeiroServicoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBancoCorreio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Importa o Banco do Correio para base Web.</wsdl:documentation>
+      <wsdl:input message="tns:ImportarBancoCorreioSoapIn" />
+      <wsdl:output message="tns:ImportarBancoCorreioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBaseSINAF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Importa Base SINAF TUsuario, TProfissao, TOrigemVenda, TFaixa.</wsdl:documentation>
+      <wsdl:input message="tns:ImportarBaseSINAFSoapIn" />
+      <wsdl:output message="tns:ImportarBaseSINAFSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SyncSINAFSoap" type="tns:SyncSINAFSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObterPrimeiroServico">
+      <soap:operation soapAction="http://tempuri.org/ObterPrimeiroServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBancoCorreio">
+      <soap:operation soapAction="http://tempuri.org/ImportarBancoCorreio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBaseSINAF">
+      <soap:operation soapAction="http://tempuri.org/ImportarBaseSINAF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SyncSINAFSoap12" type="tns:SyncSINAFSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObterPrimeiroServico">
+      <soap12:operation soapAction="http://tempuri.org/ObterPrimeiroServico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBancoCorreio">
+      <soap12:operation soapAction="http://tempuri.org/ImportarBancoCorreio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportarBaseSINAF">
+      <soap12:operation soapAction="http://tempuri.org/ImportarBaseSINAF" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SyncSINAF">
+    <wsdl:port name="SyncSINAFSoap" binding="tns:SyncSINAFSoap">
+      <soap:address location="http://177.159.200.4/SINAF/Service/SyncSINAF.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SyncSINAFSoap12" binding="tns:SyncSINAFSoap12">
+      <soap12:address location="http://177.159.200.4/SINAF/Service/SyncSINAF.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

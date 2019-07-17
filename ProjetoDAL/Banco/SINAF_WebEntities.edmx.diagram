@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4498f02e05774635a65fb9371dd39862" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="SINAFModel.HistoricoTColetor" Width="1.5" PointX="3" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.HistoricoTEntrevistaDownload" Width="1.5" PointX="7.5" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.HistoricoTEntrevistaUpload" Width="1.5" PointX="7.5" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.HistoricoTSincronismo" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.MobileTEntrevista" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.MobileTEntrevistado" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.MobileTEntrevistadoEndereco" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.MobileTGPS" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.MobileTIncompleta" Width="1.5" PointX="11.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.MobileTIncompletaResposta" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.MobileTResposta" Width="1.5" PointX="11.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.MobileTSimuladorProduto" Width="1.5" PointX="13.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.MobileTSimuladorSubAgregado" Width="1.5" PointX="13.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.MobileTSimuladorSubFuneral" Width="1.5" PointX="13.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.MobileTSimuladorSubRenda" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.ServicoTEntrevista" Width="1.5" PointX="15.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TAgendamento" Width="1.5" PointX="8.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TAtendimento" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TBairro" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TCidade" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TColetor" Width="1.5" PointX="15.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TEstado" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TFaixa" Width="1.5" PointX="5.25" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TFilial" Width="1.5" PointX="3.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TLog" Width="1.5" PointX="5.25" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TLogradouro" Width="1.5" PointX="7.5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TMenu" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TMenuPerfil" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TOrigemVenda" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TParametro" Width="1.5" PointX="15.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TPerfil" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TPerfilCargo" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TPlanoCasal" Width="1.5" PointX="10.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TPlanoCasalFuneral" Width="1.5" PointX="15.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TPlanoProtecao" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TPlanoProtecaoFuneral" Width="1.5" PointX="17.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TPlanoProtecaoRenda" Width="1.5" PointX="17.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TPlanoSenior" Width="1.5" PointX="12.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TPlanoSeniorFuneral" Width="1.5" PointX="17.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TProfissao" Width="1.5" PointX="17.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SINAFModel.TUsuario" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <AssociationConnector Association="SINAFModel.FK_HistoricoTSincronismo_HistoricoTColetor" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_HistoricoTEntrevistaDownload_HistoricoTSincronismo" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_HistoricoTEntrevistaUpload_HistoricoTSincronismo" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_HistoricoTSincronismo_TUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_TAgendamento_TAtendimento" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_TAgendamento_TUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_TAgendamento_TUsuario1" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_TAtendimento_TFilial" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.TBairro_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.TCidade_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.TCidade_LOGFK" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.TEstado_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_TFaixa_TUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_TLog_TUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_TMenuPerfil_TMenu" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_TMenuPerfil_TPerfil" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_TPerfilCargo_TPerfil" ManuallyRouted="false" />
+        <AssociationConnector Association="SINAFModel.FK_TUsuario_TPerfil" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

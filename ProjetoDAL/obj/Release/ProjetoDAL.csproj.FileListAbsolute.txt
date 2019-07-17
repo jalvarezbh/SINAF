@@ -1,0 +1,8 @@
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\bin\Release\ProjetoDAL.dll.config
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\bin\Release\ProjetoDAL.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\bin\Release\ProjetoDAL.pdb
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\bin\Release\ProjetoVO.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\bin\Release\ProjetoVO.pdb
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\obj\Release\ProjetoDAL.csprojResolveAssemblyReference.cache
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\obj\Release\ProjetoDAL.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\obj\Release\ProjetoDAL.pdb

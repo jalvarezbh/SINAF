@@ -1,0 +1,745 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SINAFModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="SINAF_WebEntities">
+    <EntitySet Name="HistoricoTColetor" EntityType="SINAFModel.HistoricoTColetor" />
+    <EntitySet Name="HistoricoTEntrevistaDownload" EntityType="SINAFModel.HistoricoTEntrevistaDownload" />
+    <EntitySet Name="HistoricoTEntrevistaUpload" EntityType="SINAFModel.HistoricoTEntrevistaUpload" />
+    <EntitySet Name="HistoricoTSincronismo" EntityType="SINAFModel.HistoricoTSincronismo" />
+    <EntitySet Name="MobileTEntrevista" EntityType="SINAFModel.MobileTEntrevista" />
+    <EntitySet Name="MobileTEntrevistado" EntityType="SINAFModel.MobileTEntrevistado" />
+    <EntitySet Name="MobileTEntrevistadoEndereco" EntityType="SINAFModel.MobileTEntrevistadoEndereco" />
+    <EntitySet Name="MobileTGPS" EntityType="SINAFModel.MobileTGPS" />
+    <EntitySet Name="MobileTIncompleta" EntityType="SINAFModel.MobileTIncompleta" />
+    <EntitySet Name="MobileTIncompletaResposta" EntityType="SINAFModel.MobileTIncompletaResposta" />
+    <EntitySet Name="MobileTResposta" EntityType="SINAFModel.MobileTResposta" />
+    <EntitySet Name="MobileTSimuladorProduto" EntityType="SINAFModel.MobileTSimuladorProduto" />
+    <EntitySet Name="MobileTSimuladorSubAgregado" EntityType="SINAFModel.MobileTSimuladorSubAgregado" />
+    <EntitySet Name="MobileTSimuladorSubFuneral" EntityType="SINAFModel.MobileTSimuladorSubFuneral" />
+    <EntitySet Name="MobileTSimuladorSubRenda" EntityType="SINAFModel.MobileTSimuladorSubRenda" />
+    <EntitySet Name="ServicoTEntrevista" EntityType="SINAFModel.ServicoTEntrevista" />
+    <EntitySet Name="TAgendamento" EntityType="SINAFModel.TAgendamento" />
+    <EntitySet Name="TAtendimento" EntityType="SINAFModel.TAtendimento" />
+    <EntitySet Name="TBairro" EntityType="SINAFModel.TBairro" />
+    <EntitySet Name="TCidade" EntityType="SINAFModel.TCidade" />
+    <EntitySet Name="TColetor" EntityType="SINAFModel.TColetor" />
+    <EntitySet Name="TEstado" EntityType="SINAFModel.TEstado" />
+    <EntitySet Name="TFaixa" EntityType="SINAFModel.TFaixa" />
+    <EntitySet Name="TFilial" EntityType="SINAFModel.TFilial" />
+    <EntitySet Name="TLog" EntityType="SINAFModel.TLog" />
+    <EntitySet Name="TLogradouro" EntityType="SINAFModel.TLogradouro" />
+    <EntitySet Name="TMenu" EntityType="SINAFModel.TMenu" />
+    <EntitySet Name="TMenuPerfil" EntityType="SINAFModel.TMenuPerfil" />
+    <EntitySet Name="TOrigemVenda" EntityType="SINAFModel.TOrigemVenda" />
+    <EntitySet Name="TParametro" EntityType="SINAFModel.TParametro" />
+    <EntitySet Name="TPerfil" EntityType="SINAFModel.TPerfil" />
+    <EntitySet Name="TPerfilCargo" EntityType="SINAFModel.TPerfilCargo" />
+    <EntitySet Name="TPlanoCasal" EntityType="SINAFModel.TPlanoCasal" />
+    <EntitySet Name="TPlanoCasalFuneral" EntityType="SINAFModel.TPlanoCasalFuneral" />
+    <EntitySet Name="TPlanoProtecao" EntityType="SINAFModel.TPlanoProtecao" />
+    <EntitySet Name="TPlanoProtecaoFuneral" EntityType="SINAFModel.TPlanoProtecaoFuneral" />
+    <EntitySet Name="TPlanoProtecaoRenda" EntityType="SINAFModel.TPlanoProtecaoRenda" />
+    <EntitySet Name="TPlanoSenior" EntityType="SINAFModel.TPlanoSenior" />
+    <EntitySet Name="TPlanoSeniorFuneral" EntityType="SINAFModel.TPlanoSeniorFuneral" />
+    <EntitySet Name="TProfissao" EntityType="SINAFModel.TProfissao" />
+    <EntitySet Name="TUsuario" EntityType="SINAFModel.TUsuario" />
+    <AssociationSet Name="FK_HistoricoTSincronismo_HistoricoTColetor" Association="SINAFModel.FK_HistoricoTSincronismo_HistoricoTColetor">
+      <End Role="HistoricoTColetor" EntitySet="HistoricoTColetor" />
+      <End Role="HistoricoTSincronismo" EntitySet="HistoricoTSincronismo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoricoTEntrevistaDownload_HistoricoTSincronismo" Association="SINAFModel.FK_HistoricoTEntrevistaDownload_HistoricoTSincronismo">
+      <End Role="HistoricoTSincronismo" EntitySet="HistoricoTSincronismo" />
+      <End Role="HistoricoTEntrevistaDownload" EntitySet="HistoricoTEntrevistaDownload" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoricoTEntrevistaUpload_HistoricoTSincronismo" Association="SINAFModel.FK_HistoricoTEntrevistaUpload_HistoricoTSincronismo">
+      <End Role="HistoricoTSincronismo" EntitySet="HistoricoTSincronismo" />
+      <End Role="HistoricoTEntrevistaUpload" EntitySet="HistoricoTEntrevistaUpload" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoricoTSincronismo_TUsuario" Association="SINAFModel.FK_HistoricoTSincronismo_TUsuario">
+      <End Role="TUsuario" EntitySet="TUsuario" />
+      <End Role="HistoricoTSincronismo" EntitySet="HistoricoTSincronismo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAgendamento_TAtendimento" Association="SINAFModel.FK_TAgendamento_TAtendimento">
+      <End Role="TAtendimento" EntitySet="TAtendimento" />
+      <End Role="TAgendamento" EntitySet="TAgendamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAgendamento_TUsuario" Association="SINAFModel.FK_TAgendamento_TUsuario">
+      <End Role="TUsuario" EntitySet="TUsuario" />
+      <End Role="TAgendamento" EntitySet="TAgendamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAgendamento_TUsuario1" Association="SINAFModel.FK_TAgendamento_TUsuario1">
+      <End Role="TUsuario" EntitySet="TUsuario" />
+      <End Role="TAgendamento" EntitySet="TAgendamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TAtendimento_TFilial" Association="SINAFModel.FK_TAtendimento_TFilial">
+      <End Role="TFilial" EntitySet="TFilial" />
+      <End Role="TAtendimento" EntitySet="TAtendimento" />
+    </AssociationSet>
+    <AssociationSet Name="TBairro_FK" Association="SINAFModel.TBairro_FK">
+      <End Role="TBairro" EntitySet="TBairro" />
+      <End Role="TLogradouro" EntitySet="TLogradouro" />
+    </AssociationSet>
+    <AssociationSet Name="TCidade_FK" Association="SINAFModel.TCidade_FK">
+      <End Role="TCidade" EntitySet="TCidade" />
+      <End Role="TBairro" EntitySet="TBairro" />
+    </AssociationSet>
+    <AssociationSet Name="TCidade_LOGFK" Association="SINAFModel.TCidade_LOGFK">
+      <End Role="TCidade" EntitySet="TCidade" />
+      <End Role="TLogradouro" EntitySet="TLogradouro" />
+    </AssociationSet>
+    <AssociationSet Name="TEstado_FK" Association="SINAFModel.TEstado_FK">
+      <End Role="TEstado" EntitySet="TEstado" />
+      <End Role="TCidade" EntitySet="TCidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TFaixa_TUsuario" Association="SINAFModel.FK_TFaixa_TUsuario">
+      <End Role="TUsuario" EntitySet="TUsuario" />
+      <End Role="TFaixa" EntitySet="TFaixa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TLog_TUsuario" Association="SINAFModel.FK_TLog_TUsuario">
+      <End Role="TUsuario" EntitySet="TUsuario" />
+      <End Role="TLog" EntitySet="TLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TMenuPerfil_TMenu" Association="SINAFModel.FK_TMenuPerfil_TMenu">
+      <End Role="TMenu" EntitySet="TMenu" />
+      <End Role="TMenuPerfil" EntitySet="TMenuPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TMenuPerfil_TPerfil" Association="SINAFModel.FK_TMenuPerfil_TPerfil">
+      <End Role="TPerfil" EntitySet="TPerfil" />
+      <End Role="TMenuPerfil" EntitySet="TMenuPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPerfilCargo_TPerfil" Association="SINAFModel.FK_TPerfilCargo_TPerfil">
+      <End Role="TPerfil" EntitySet="TPerfil" />
+      <End Role="TPerfilCargo" EntitySet="TPerfilCargo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUsuario_TPerfil" Association="SINAFModel.FK_TUsuario_TPerfil">
+      <End Role="TPerfil" EntitySet="TPerfil" />
+      <End Role="TUsuario" EntitySet="TUsuario" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="HistoricoTColetor">
+    <Key>
+      <PropertyRef Name="IDHistoricoColetor" />
+    </Key>
+    <Property Name="IDHistoricoColetor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroColetor" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DataUltimoSincronismo" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="NumeroTotalSincronismo" Type="Int32" Nullable="false" />
+    <Property Name="NumeroTotalEntrevista" Type="Int32" Nullable="false" />
+    <Property Name="VersaoSistema" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="HistoricoTSincronismo" Relationship="SINAFModel.FK_HistoricoTSincronismo_HistoricoTColetor" FromRole="HistoricoTColetor" ToRole="HistoricoTSincronismo" />
+  </EntityType>
+  <EntityType Name="HistoricoTEntrevistaDownload">
+    <Key>
+      <PropertyRef Name="IDHistoricoEntrevistaDownload" />
+    </Key>
+    <Property Name="IDHistoricoEntrevistaDownload" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoEntrevista" Type="Double" Nullable="false" />
+    <NavigationProperty Name="HistoricoTSincronismo" Relationship="SINAFModel.FK_HistoricoTEntrevistaDownload_HistoricoTSincronismo" FromRole="HistoricoTEntrevistaDownload" ToRole="HistoricoTSincronismo" />
+  </EntityType>
+  <EntityType Name="HistoricoTEntrevistaUpload">
+    <Key>
+      <PropertyRef Name="IDHistoricoEntrevistaUpload" />
+    </Key>
+    <Property Name="IDHistoricoEntrevistaUpload" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoEntrevista" Type="Double" Nullable="false" />
+    <NavigationProperty Name="HistoricoTSincronismo" Relationship="SINAFModel.FK_HistoricoTEntrevistaUpload_HistoricoTSincronismo" FromRole="HistoricoTEntrevistaUpload" ToRole="HistoricoTSincronismo" />
+  </EntityType>
+  <EntityType Name="HistoricoTSincronismo">
+    <Key>
+      <PropertyRef Name="IDHistoricoSincronismo" />
+    </Key>
+    <Property Name="IDHistoricoSincronismo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DataSincronismo" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="NumeroUpload" Type="Int32" Nullable="false" />
+    <Property Name="NumeroDownload" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HistoricoTColetor" Relationship="SINAFModel.FK_HistoricoTSincronismo_HistoricoTColetor" FromRole="HistoricoTSincronismo" ToRole="HistoricoTColetor" />
+    <NavigationProperty Name="HistoricoTEntrevistaDownload" Relationship="SINAFModel.FK_HistoricoTEntrevistaDownload_HistoricoTSincronismo" FromRole="HistoricoTSincronismo" ToRole="HistoricoTEntrevistaDownload" />
+    <NavigationProperty Name="HistoricoTEntrevistaUpload" Relationship="SINAFModel.FK_HistoricoTEntrevistaUpload_HistoricoTSincronismo" FromRole="HistoricoTSincronismo" ToRole="HistoricoTEntrevistaUpload" />
+    <NavigationProperty Name="TUsuario" Relationship="SINAFModel.FK_HistoricoTSincronismo_TUsuario" FromRole="HistoricoTSincronismo" ToRole="TUsuario" />
+  </EntityType>
+  <EntityType Name="MobileTEntrevista">
+    <Key>
+      <PropertyRef Name="CodigoEntrevista" />
+    </Key>
+    <Property Name="CodigoEntrevista" Type="Int64" Nullable="false" />
+    <Property Name="CodigoColaborador" Type="Int16" />
+    <Property Name="DataEntrevista" Type="DateTime" Precision="3" />
+    <Property Name="CodigoUsuario" Type="Int32" Nullable="false" />
+    <Property Name="DataInclusao" Type="DateTime" Precision="3" />
+    <Property Name="CodigoQuestionario" Type="Int16" />
+    <Property Name="OrigemVenda" Type="String" MaxLength="3" Unicode="true" FixedLength="false" />
+    <Property Name="Exportado" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MobileTEntrevistado">
+    <Key>
+      <PropertyRef Name="CodigoEntrevista" />
+    </Key>
+    <Property Name="CodigoEntrevista" Type="Int64" Nullable="false" />
+    <Property Name="Nome" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CPF" Type="String" MaxLength="14" Unicode="true" FixedLength="false" />
+    <Property Name="DataNascimento" Type="DateTime" Precision="3" />
+    <Property Name="EstadoCivil" Type="Int16" />
+    <Property Name="IDProfissao" Type="Int16" />
+    <Property Name="FaixaEtaria" Type="Int16" />
+    <Property Name="FaixaEtariaConjuge" Type="Int16" />
+    <Property Name="IDProfissaoConjuge" Type="Int16" />
+    <Property Name="CapitalLimitado" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+    <Property Name="CapitalLimitadoConjuge" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+    <Property Name="DDD" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="Telefone" Type="String" MaxLength="13" Unicode="true" FixedLength="false" />
+    <Property Name="DDDCelular" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="Celular" Type="String" MaxLength="13" Unicode="true" FixedLength="false" />
+    <Property Name="Sexo" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+    <Property Name="Informacao" Type="Boolean" />
+    <Property Name="Exportado" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MobileTEntrevistadoEndereco">
+    <Key>
+      <PropertyRef Name="CodigoEntrevista" />
+    </Key>
+    <Property Name="CodigoEntrevista" Type="Int64" Nullable="false" />
+    <Property Name="Endereco" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Numero" Type="Int32" />
+    <Property Name="Bairro" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Cidade" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UF" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="CEP" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="Complemento" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Exportado" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MobileTGPS">
+    <Key>
+      <PropertyRef Name="IDMobileTGPS" />
+    </Key>
+    <Property Name="IDMobileTGPS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoEntrevista" Type="Int64" />
+    <Property Name="Latitude" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="Longitude" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="DataCadastro" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="MobileTIncompleta">
+    <Key>
+      <PropertyRef Name="CodigoEntrevista" />
+    </Key>
+    <Property Name="CodigoEntrevista" Type="Int64" Nullable="false" />
+    <Property Name="DataEntrevista" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CodigoUsuario" Type="Int32" />
+    <Property Name="CapitalLimitado" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+    <Property Name="CapitalLimitadoConjuge" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+    <Property Name="Celular" Type="String" MaxLength="13" Unicode="true" FixedLength="false" />
+    <Property Name="CPF" Type="String" MaxLength="14" Unicode="true" FixedLength="false" />
+    <Property Name="DataNascimento" Type="DateTime" Precision="3" />
+    <Property Name="DataNascimentoConjuge" Type="DateTime" Precision="3" />
+    <Property Name="DDD" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="DDDCelular" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="EstadoCivil" Type="Int16" />
+    <Property Name="FaixaEtaria" Type="Int16" />
+    <Property Name="FaixaEtariaConjuge" Type="Int16" />
+    <Property Name="IDProfissao" Type="Int16" />
+    <Property Name="IDProfissaoConjuge" Type="Int16" />
+    <Property Name="Nome" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sexo" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+    <Property Name="Telefone" Type="String" MaxLength="13" Unicode="true" FixedLength="false" />
+    <Property Name="Bairro" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CEP" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="Cidade" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Complemento" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Endereco" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Numero" Type="Int32" />
+    <Property Name="UF" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="Motivo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DataInclusao" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="MobileTIncompletaResposta">
+    <Key>
+      <PropertyRef Name="IDIncompletaResposta" />
+    </Key>
+    <Property Name="CodigoEntrevista" Type="Int64" Nullable="false" />
+    <Property Name="CodigoPergunta" Type="Int16" />
+    <Property Name="CodigoOpcao" Type="Int32" />
+    <Property Name="CodigoSeqResposta" Type="Int32" />
+    <Property Name="TextoResposta" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TextoSubResposta" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IDIncompletaResposta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="MobileTResposta">
+    <Key>
+      <PropertyRef Name="IDResposta" />
+    </Key>
+    <Property Name="CodigoEntrevista" Type="Int64" Nullable="false" />
+    <Property Name="CodigoPergunta" Type="Int16" />
+    <Property Name="CodigoOpcao" Type="Int32" />
+    <Property Name="CodigoSeqResposta" Type="Int32" />
+    <Property Name="TextoResposta" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TextoSubResposta" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IDResposta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Exportado" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MobileTSimuladorProduto">
+    <Key>
+      <PropertyRef Name="CodigoEntrevista" />
+      <PropertyRef Name="IDSimuladorProduto" />
+    </Key>
+    <Property Name="CodigoEntrevista" Type="Int64" Nullable="false" />
+    <Property Name="Produto" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PremioTotal" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="FaixaEtaria" Type="Int32" />
+    <Property Name="FaixaEtariaConjuge" Type="Int32" />
+    <Property Name="RespostaBaseRenda" Type="Int32" />
+    <Property Name="RespostaBaseDisposto" Type="Int32" />
+    <Property Name="IDSimuladorProduto" Type="Int64" Nullable="false" />
+    <Property Name="TipoRegistro" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="MobileTSimuladorSubAgregado">
+    <Key>
+      <PropertyRef Name="IDSimuladorSubAgregado" />
+      <PropertyRef Name="CodigoEntrevista" />
+      <PropertyRef Name="IDSimuladorProduto" />
+    </Key>
+    <Property Name="IDSimuladorSubAgregado" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoEntrevista" Type="Int64" Nullable="false" />
+    <Property Name="GrauParentesco" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Idade" Type="Int32" Nullable="false" />
+    <Property Name="PremioAgregado" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="Funeral" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IDSimuladorProduto" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MobileTSimuladorSubFuneral">
+    <Key>
+      <PropertyRef Name="CodigoEntrevista" />
+      <PropertyRef Name="IDSimuladorProduto" />
+    </Key>
+    <Property Name="CodigoEntrevista" Type="Int64" Nullable="false" />
+    <Property Name="ProtecaoCoberturaMorte" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="ProtecaoCoberturaAcidente" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="ProtecaoCoberturaEmergencia" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="ProtecaoCategoria" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProtecaoPremio" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="SeniorCoberturaMorte" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="SeniorCategoria" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SeniorPremio" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="CasalCoberturaMorte" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="CasalCoberturaConjuge" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="CasalCategoria" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CasalPremio" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="IDSimuladorProduto" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MobileTSimuladorSubRenda">
+    <Key>
+      <PropertyRef Name="CodigoEntrevista" />
+      <PropertyRef Name="IDSimuladorProduto" />
+    </Key>
+    <Property Name="CodigoEntrevista" Type="Int64" Nullable="false" />
+    <Property Name="Periodo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ValorRenda" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="Capital" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="PremioRenda" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="IDSimuladorProduto" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ServicoTEntrevista">
+    <Key>
+      <PropertyRef Name="IDServico" />
+    </Key>
+    <Property Name="IDServico" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoEntrevista" Type="Int64" Nullable="false" />
+    <Property Name="CodigoColaborador" Type="Int16" />
+    <Property Name="DataEntrevista" Type="DateTime" Precision="3" />
+    <Property Name="Mensagem" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="DataErro" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TAgendamento">
+    <Key>
+      <PropertyRef Name="IDAgendamento" />
+    </Key>
+    <Property Name="IDAgendamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DataNascimento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Telefone" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Celular" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CEP" Type="Int32" Nullable="false" />
+    <Property Name="Logradouro" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Numero" Type="Int32" />
+    <Property Name="Complemento" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Bairro" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Cidade" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="UF" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="PontoReferencia" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="DataAgendada" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TAtendimento" Relationship="SINAFModel.FK_TAgendamento_TAtendimento" FromRole="TAgendamento" ToRole="TAtendimento" />
+    <NavigationProperty Name="TUsuario" Relationship="SINAFModel.FK_TAgendamento_TUsuario" FromRole="TAgendamento" ToRole="TUsuario" />
+    <NavigationProperty Name="TUsuario1" Relationship="SINAFModel.FK_TAgendamento_TUsuario1" FromRole="TAgendamento" ToRole="TUsuario" />
+  </EntityType>
+  <EntityType Name="TAtendimento">
+    <Key>
+      <PropertyRef Name="IDAtendimento" />
+    </Key>
+    <Property Name="IDAtendimento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDBairro" Type="Int32" Nullable="false" />
+    <Property Name="IDCidade" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TAgendamento" Relationship="SINAFModel.FK_TAgendamento_TAtendimento" FromRole="TAtendimento" ToRole="TAgendamento" />
+    <NavigationProperty Name="TFilial" Relationship="SINAFModel.FK_TAtendimento_TFilial" FromRole="TAtendimento" ToRole="TFilial" />
+  </EntityType>
+  <EntityType Name="TBairro">
+    <Key>
+      <PropertyRef Name="IDBairro" />
+    </Key>
+    <Property Name="IDBairro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomeBairro" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="TLogradouro" Relationship="SINAFModel.TBairro_FK" FromRole="TBairro" ToRole="TLogradouro" />
+    <NavigationProperty Name="TCidade" Relationship="SINAFModel.TCidade_FK" FromRole="TBairro" ToRole="TCidade" />
+  </EntityType>
+  <EntityType Name="TCidade">
+    <Key>
+      <PropertyRef Name="IDCidade" />
+    </Key>
+    <Property Name="IDCidade" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomeCidade" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="TBairro" Relationship="SINAFModel.TCidade_FK" FromRole="TCidade" ToRole="TBairro" />
+    <NavigationProperty Name="TLogradouro" Relationship="SINAFModel.TCidade_LOGFK" FromRole="TCidade" ToRole="TLogradouro" />
+    <NavigationProperty Name="TEstado" Relationship="SINAFModel.TEstado_FK" FromRole="TCidade" ToRole="TEstado" />
+  </EntityType>
+  <EntityType Name="TColetor">
+    <Key>
+      <PropertyRef Name="IDColetor" />
+    </Key>
+    <Property Name="IDColetor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroSerie" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IMEI" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Fabricante" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Modelo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CodigoUsuarioResponsavel" Type="Int32" />
+    <Property Name="CodigoUsuarioCadastro" Type="Int32" Nullable="false" />
+    <Property Name="DataCadastro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Ativo" Type="Boolean" Nullable="false" />
+    <Property Name="DataInativacao" Type="DateTime" Precision="3" />
+    <Property Name="UsoBackup" Type="Boolean" Nullable="false" />
+    <Property Name="MotivoInativacao" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DataUltimaSincronizacao" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TEstado">
+    <Key>
+      <PropertyRef Name="IDEstado" />
+    </Key>
+    <Property Name="IDEstado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sigla" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="TCidade" Relationship="SINAFModel.TEstado_FK" FromRole="TEstado" ToRole="TCidade" />
+  </EntityType>
+  <EntityType Name="TFaixa">
+    <Key>
+      <PropertyRef Name="IDFaixa" />
+    </Key>
+    <Property Name="IDFaixa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoFaixa" Type="Double" Nullable="false" />
+    <Property Name="Usado" Type="Boolean" Nullable="false" />
+    <Property Name="DataDownloadBase" Type="DateTime" Precision="3" />
+    <Property Name="DataUtilizado" Type="DateTime" Precision="3" />
+    <Property Name="IDHistoricoTSincronismoDownload" Type="Int32" />
+    <Property Name="IDHistoricoTSincronismoUpload" Type="Int32" />
+    <NavigationProperty Name="TUsuario" Relationship="SINAFModel.FK_TFaixa_TUsuario" FromRole="TFaixa" ToRole="TUsuario" />
+  </EntityType>
+  <EntityType Name="TFilial">
+    <Key>
+      <PropertyRef Name="IDFilial" />
+    </Key>
+    <Property Name="IDFilial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomeFilial" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="TAtendimento" Relationship="SINAFModel.FK_TAtendimento_TFilial" FromRole="TFilial" ToRole="TAtendimento" />
+  </EntityType>
+  <EntityType Name="TLog">
+    <Key>
+      <PropertyRef Name="IDLog" />
+    </Key>
+    <Property Name="IDLog" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tabela" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Data" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Tipo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="TUsuario" Relationship="SINAFModel.FK_TLog_TUsuario" FromRole="TLog" ToRole="TUsuario" />
+  </EntityType>
+  <EntityType Name="TLogradouro">
+    <Key>
+      <PropertyRef Name="IDLogradouro" />
+    </Key>
+    <Property Name="IDLogradouro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomeLogradouro" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CEP" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TBairro" Relationship="SINAFModel.TBairro_FK" FromRole="TLogradouro" ToRole="TBairro" />
+    <NavigationProperty Name="TCidade" Relationship="SINAFModel.TCidade_LOGFK" FromRole="TLogradouro" ToRole="TCidade" />
+  </EntityType>
+  <EntityType Name="TMenu">
+    <Key>
+      <PropertyRef Name="IDMenu" />
+    </Key>
+    <Property Name="IDMenu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descricao" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IDMenuPai" Type="Int32" />
+    <Property Name="Mobile" Type="Boolean" />
+    <Property Name="Url" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Ordenacao" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TMenuPerfil" Relationship="SINAFModel.FK_TMenuPerfil_TMenu" FromRole="TMenu" ToRole="TMenuPerfil" />
+  </EntityType>
+  <EntityType Name="TMenuPerfil">
+    <Key>
+      <PropertyRef Name="IDMenuPerfil" />
+    </Key>
+    <Property Name="IDMenuPerfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ativo" Type="Boolean" />
+    <NavigationProperty Name="TMenu" Relationship="SINAFModel.FK_TMenuPerfil_TMenu" FromRole="TMenuPerfil" ToRole="TMenu" />
+    <NavigationProperty Name="TPerfil" Relationship="SINAFModel.FK_TMenuPerfil_TPerfil" FromRole="TMenuPerfil" ToRole="TPerfil" />
+  </EntityType>
+  <EntityType Name="TOrigemVenda">
+    <Key>
+      <PropertyRef Name="IDOrigemVenda" />
+    </Key>
+    <Property Name="IDOrigemVenda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoOrigemVenda" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="NomeOrigemVenda" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TParametro">
+    <Key>
+      <PropertyRef Name="IDParametro" />
+    </Key>
+    <Property Name="IDParametro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TempoLogOff" Type="Int32" />
+    <Property Name="PrazoSincronismoDia" Type="Int32" />
+    <Property Name="EstoqueMaximoWeb" Type="Int32" />
+    <Property Name="EstoqueMinimoWeb" Type="Int32" />
+    <Property Name="EstoqueMaximoColetor" Type="Int32" />
+    <Property Name="EstoqueMinimoColetor" Type="Int32" />
+    <Property Name="TempoDadosServidorDias" Type="Int32" />
+    <Property Name="TempoVerificaERPDias" Type="Int32" />
+    <Property Name="VersaoBaseCorreio" Type="Int32" />
+    <Property Name="TempoEntrevistaColetor" Type="Int32" />
+    <Property Name="TempoEntrevistaIncompleta" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TPerfil">
+    <Key>
+      <PropertyRef Name="IDPerfil" />
+    </Key>
+    <Property Name="IDPerfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descricao" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Ativo" Type="Boolean" />
+    <NavigationProperty Name="TMenuPerfil" Relationship="SINAFModel.FK_TMenuPerfil_TPerfil" FromRole="TPerfil" ToRole="TMenuPerfil" />
+    <NavigationProperty Name="TPerfilCargo" Relationship="SINAFModel.FK_TPerfilCargo_TPerfil" FromRole="TPerfil" ToRole="TPerfilCargo" />
+    <NavigationProperty Name="TUsuario" Relationship="SINAFModel.FK_TUsuario_TPerfil" FromRole="TPerfil" ToRole="TUsuario" />
+  </EntityType>
+  <EntityType Name="TPerfilCargo">
+    <Key>
+      <PropertyRef Name="IDPerfilCargo" />
+    </Key>
+    <Property Name="IDPerfilCargo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cargo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="TPerfil" Relationship="SINAFModel.FK_TPerfilCargo_TPerfil" FromRole="TPerfilCargo" ToRole="TPerfil" />
+  </EntityType>
+  <EntityType Name="TPlanoCasal">
+    <Key>
+      <PropertyRef Name="IDPlanoCasal" />
+    </Key>
+    <Property Name="IDPlanoCasal" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="NomePlano" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CoberturaMorte" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="CoberturaConjuge" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="Premio_61_65" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_66_70" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_71_75" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_76_80" Type="Decimal" Precision="8" Scale="2" />
+  </EntityType>
+  <EntityType Name="TPlanoCasalFuneral">
+    <Key>
+      <PropertyRef Name="IDPlanoCasalFuneral" />
+    </Key>
+    <Property Name="IDPlanoCasalFuneral" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Categoria" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Ate_20" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_21_40" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_41_50" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_51_60" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_61_65" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_66_70" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_71_75" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_76_80" Type="Decimal" Precision="8" Scale="2" />
+  </EntityType>
+  <EntityType Name="TPlanoProtecao">
+    <Key>
+      <PropertyRef Name="IDPlanoProtecao" />
+    </Key>
+    <Property Name="IDPlanoProtecao" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="CoberturaMorte" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="CoberturaAcidente" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="CoberturaEmergencia" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="Premio_18_30" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_31_40" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_41_45" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_46_50" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_51_55" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_56_60" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_61_65" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="NomePlano" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TPlanoProtecaoFuneral">
+    <Key>
+      <PropertyRef Name="IDPlanoProtecaoFuneral" />
+    </Key>
+    <Property Name="IDPlanoProtecaoFuneral" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Categoria" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Ate_20" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_21_40" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_41_50" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_51_60" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_61_65" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_66_70" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_71_75" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_76_80" Type="Decimal" Precision="8" Scale="2" />
+  </EntityType>
+  <EntityType Name="TPlanoProtecaoRenda">
+    <Key>
+      <PropertyRef Name="IDPlanoProtecaoRenda" />
+    </Key>
+    <Property Name="IDPlanoProtecaoRenda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RendaPeriodo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CoberturaRendaMensal" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="CoberturaCapitalTotal" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="Premio_18_30" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_31_40" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_41_45" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_46_50" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_51_55" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_56_60" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_61_65" Type="Decimal" Precision="8" Scale="2" />
+  </EntityType>
+  <EntityType Name="TPlanoSenior">
+    <Key>
+      <PropertyRef Name="IDPlanoSenior" />
+    </Key>
+    <Property Name="IDPlanoSenior" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="NomePlano" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CoberturaMorte" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="Premio_61_65" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_66_70" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_71_75" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Premio_76_80" Type="Decimal" Precision="8" Scale="2" />
+  </EntityType>
+  <EntityType Name="TPlanoSeniorFuneral">
+    <Key>
+      <PropertyRef Name="IDPlanoSeniorFuneral" />
+    </Key>
+    <Property Name="IDPlanoSeniorFuneral" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Categoria" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Ate_20" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_21_40" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_41_50" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_51_60" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_61_65" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_66_70" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_71_75" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="De_76_80" Type="Decimal" Precision="8" Scale="2" />
+  </EntityType>
+  <EntityType Name="TProfissao">
+    <Key>
+      <PropertyRef Name="IDProfissao" />
+    </Key>
+    <Property Name="IDProfissao" Type="Int32" Nullable="false" />
+    <Property Name="NomeProfissao" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CapitalLimitado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TUsuario">
+    <Key>
+      <PropertyRef Name="IDUsuario" />
+    </Key>
+    <Property Name="IDUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Senha" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CodigoColaborador" Type="Int32" Nullable="false" />
+    <Property Name="Unidade" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Cargo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Ativo" Type="Boolean" Nullable="false" />
+    <Property Name="Abreviado" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="HistoricoTSincronismo" Relationship="SINAFModel.FK_HistoricoTSincronismo_TUsuario" FromRole="TUsuario" ToRole="HistoricoTSincronismo" />
+    <NavigationProperty Name="TAgendamento" Relationship="SINAFModel.FK_TAgendamento_TUsuario" FromRole="TUsuario" ToRole="TAgendamento" />
+    <NavigationProperty Name="TAgendamento1" Relationship="SINAFModel.FK_TAgendamento_TUsuario1" FromRole="TUsuario" ToRole="TAgendamento" />
+    <NavigationProperty Name="TFaixa" Relationship="SINAFModel.FK_TFaixa_TUsuario" FromRole="TUsuario" ToRole="TFaixa" />
+    <NavigationProperty Name="TLog" Relationship="SINAFModel.FK_TLog_TUsuario" FromRole="TUsuario" ToRole="TLog" />
+    <NavigationProperty Name="TPerfil" Relationship="SINAFModel.FK_TUsuario_TPerfil" FromRole="TUsuario" ToRole="TPerfil" />
+  </EntityType>
+  <Association Name="FK_HistoricoTSincronismo_HistoricoTColetor">
+    <End Role="HistoricoTColetor" Type="SINAFModel.HistoricoTColetor" Multiplicity="1" />
+    <End Role="HistoricoTSincronismo" Type="SINAFModel.HistoricoTSincronismo" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_HistoricoTEntrevistaDownload_HistoricoTSincronismo">
+    <End Role="HistoricoTSincronismo" Type="SINAFModel.HistoricoTSincronismo" Multiplicity="1" />
+    <End Role="HistoricoTEntrevistaDownload" Type="SINAFModel.HistoricoTEntrevistaDownload" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_HistoricoTEntrevistaUpload_HistoricoTSincronismo">
+    <End Role="HistoricoTSincronismo" Type="SINAFModel.HistoricoTSincronismo" Multiplicity="1" />
+    <End Role="HistoricoTEntrevistaUpload" Type="SINAFModel.HistoricoTEntrevistaUpload" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_HistoricoTSincronismo_TUsuario">
+    <End Role="TUsuario" Type="SINAFModel.TUsuario" Multiplicity="1" />
+    <End Role="HistoricoTSincronismo" Type="SINAFModel.HistoricoTSincronismo" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TAgendamento_TAtendimento">
+    <End Role="TAtendimento" Type="SINAFModel.TAtendimento" Multiplicity="0..1" />
+    <End Role="TAgendamento" Type="SINAFModel.TAgendamento" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TAgendamento_TUsuario">
+    <End Role="TUsuario" Type="SINAFModel.TUsuario" Multiplicity="1" />
+    <End Role="TAgendamento" Type="SINAFModel.TAgendamento" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TAgendamento_TUsuario1">
+    <End Role="TUsuario" Type="SINAFModel.TUsuario" Multiplicity="0..1" />
+    <End Role="TAgendamento" Type="SINAFModel.TAgendamento" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TAtendimento_TFilial">
+    <End Role="TFilial" Type="SINAFModel.TFilial" Multiplicity="1" />
+    <End Role="TAtendimento" Type="SINAFModel.TAtendimento" Multiplicity="*" />
+  </Association>
+  <Association Name="TBairro_FK">
+    <End Role="TBairro" Type="SINAFModel.TBairro" Multiplicity="1" />
+    <End Role="TLogradouro" Type="SINAFModel.TLogradouro" Multiplicity="*" />
+  </Association>
+  <Association Name="TCidade_FK">
+    <End Role="TCidade" Type="SINAFModel.TCidade" Multiplicity="1" />
+    <End Role="TBairro" Type="SINAFModel.TBairro" Multiplicity="*" />
+  </Association>
+  <Association Name="TCidade_LOGFK">
+    <End Role="TCidade" Type="SINAFModel.TCidade" Multiplicity="1" />
+    <End Role="TLogradouro" Type="SINAFModel.TLogradouro" Multiplicity="*" />
+  </Association>
+  <Association Name="TEstado_FK">
+    <End Role="TEstado" Type="SINAFModel.TEstado" Multiplicity="1" />
+    <End Role="TCidade" Type="SINAFModel.TCidade" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TFaixa_TUsuario">
+    <End Role="TUsuario" Type="SINAFModel.TUsuario" Multiplicity="0..1" />
+    <End Role="TFaixa" Type="SINAFModel.TFaixa" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TLog_TUsuario">
+    <End Role="TUsuario" Type="SINAFModel.TUsuario" Multiplicity="1" />
+    <End Role="TLog" Type="SINAFModel.TLog" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TMenuPerfil_TMenu">
+    <End Role="TMenu" Type="SINAFModel.TMenu" Multiplicity="0..1" />
+    <End Role="TMenuPerfil" Type="SINAFModel.TMenuPerfil" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TMenuPerfil_TPerfil">
+    <End Role="TPerfil" Type="SINAFModel.TPerfil" Multiplicity="0..1" />
+    <End Role="TMenuPerfil" Type="SINAFModel.TMenuPerfil" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TPerfilCargo_TPerfil">
+    <End Role="TPerfil" Type="SINAFModel.TPerfil" Multiplicity="1" />
+    <End Role="TPerfilCargo" Type="SINAFModel.TPerfilCargo" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_TUsuario_TPerfil">
+    <End Role="TPerfil" Type="SINAFModel.TPerfil" Multiplicity="1" />
+    <End Role="TUsuario" Type="SINAFModel.TUsuario" Multiplicity="*" />
+  </Association>
+</Schema>

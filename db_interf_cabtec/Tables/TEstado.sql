@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[TEstado] (
+    [IDEstado] INT          IDENTITY (1, 1) NOT NULL,
+    [Sigla]    NVARCHAR (2) NOT NULL,
+    PRIMARY KEY CLUSTERED ([IDEstado] ASC) WITH (STATISTICS_NORECOMPUTE = ON)
+);
+

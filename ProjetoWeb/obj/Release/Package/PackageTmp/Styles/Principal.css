@@ -1,0 +1,1162 @@
+﻿
+/* #region [ LOGIN ] */
+
+.bodyLogin
+{
+    background-color: #F7F7F7;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/Fundo.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+ }
+
+.tableLogin
+{
+    width:50%;
+    height:100%;
+    padding-left:20%;
+    padding-right:20%;
+}
+
+.tdLogoLogin
+{
+    padding-left: 5%;
+    min-width: 100px;
+    width:30%;
+    height: 60px;
+}
+
+.tdTituloLogin
+{
+    text-align:center;
+    min-width: 540px;
+    width:40%;
+    height: 60px;
+}
+
+.tdVersaoLogin
+{
+    text-align:left;
+    min-width: 40px;
+    width:30%;
+    height: 60px;
+    vertical-align:bottom;
+}
+
+.linkEsqueceu
+{ 
+    font-family: Arial, Verdana;
+	color: #223D76;
+	font-size: 10px;
+	
+}
+
+.tableLoginCampos
+{    
+    text-align:center;
+	font-family: Arial, Verdana;
+	color: #223D76;
+}    
+    
+.trtableLoginCampos
+{    
+   height:30px;
+}   
+
+.panelLogin
+{
+    padding-left:50px;
+    width:100%;
+    height:160px;
+}
+
+ .tdMensagemLogin
+{
+    text-align:center;
+    vertical-align:middle;
+    font-family: Arial, Verdana;
+    font-size:12px;
+    font-weight:bold;
+    color:#223D76;   
+ }
+
+.trSummaryLogin
+{
+    vertical-align:middle;
+    height:20px;
+}
+
+.tdSummaryLogin
+{
+    max-width:100%;
+    height:20px;
+    text-align:center;
+    vertical-align:middle;
+    font-family: Arial, Verdana;
+    font-size:12px;
+    font-weight:bold;
+   
+}
+
+/* #endregion */
+
+/* #region [ MASTER ] */
+
+.bodyPrincipal 
+{
+    background-color: #F7F7F7;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/Fundo.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.tableMaster
+{
+    width:98%;
+    padding-left:3%;
+    padding-right:3%;
+}
+
+.tdLogo
+{
+    padding-left: 5%;
+    min-width: 200px;
+    width:25%;
+    height: 60px;
+}
+
+.tdTitulo
+{
+    text-align:center;
+    min-width: 360px;
+    width:45%;
+    height: 60px;
+}
+
+.tdVersao
+{
+    text-align:right;
+    min-width: 40px;
+    width:5%;
+    height: 60px;
+    vertical-align:bottom;
+}
+
+.tdUsuario
+{
+    text-align:right;
+    padding-right: 10px;
+    min-width: 200px;
+    width:25%;
+    height: 60px;
+    color: #223D76;
+}
+
+.imageLogo
+{
+    border-style:none;
+    height: 60px;
+}
+
+.labelTitulo
+{    
+    text-align:center; 
+	font-family: Arial, Verdana;
+	font-size: 36px;
+	color: #223D76;
+}
+
+.spanVersao
+{  
+    text-align: right;
+	font-family: Arial, Verdana;
+	font-size: 10px;
+	font-style: italic;
+	color: #223D76;
+}
+
+.divSiteMap
+{  
+    padding-left:50px;
+    text-align: left;
+	font-family: Arial, Verdana;
+	font-size: 12px;
+	font-style: italic;
+	color: #223D76;
+}
+
+/* #endregion */
+
+/* #region [ MENU ] */
+
+.divMenu
+{
+    background-image: url(../Images/Menu.png);
+    white-space: nowrap;
+    z-index: 10;
+    top: 0px;
+    float:left;
+    width:96%;
+    height: 40px;
+}
+
+.divMenuEsquerda
+{
+    float:left;
+    white-space: nowrap;
+    z-index: 10;
+    top: 0px;
+    width:2%;
+    height: 40px;
+    text-align:right;
+}
+
+.imgMenuEsquerda
+{
+    width: 20px;
+    height: 40px;
+}
+
+.divMenuDireita
+{
+    float:right;
+    white-space: nowrap;
+    z-index: 10;
+    top: 0px;
+    width:2%;
+    height: 40px;
+    text-align:left;
+}
+
+.imgMenuDireita
+{
+    width: 20px;
+    height: 40px;
+}
+
+.divMenuRender
+{
+    display:none;
+}
+
+.MenuPrincipal
+{
+    text-align:left; 
+    padding:6px 10px 0px 10px;
+	font-family: Arial, Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	width: 180px;
+    color: White;
+}
+
+.MenuPrincipal:hover
+{
+    text-align:left; 
+    padding: 6px 10px 0px 10px;
+	font-family: Arial, Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	width: 180px;
+    color: #f79811;
+}
+
+.divMenu div
+{
+    text-align:center; 
+    width: auto;
+    height:auto;
+    min-width:80px;
+    margin-top:6px;
+    margin-left:12px;    
+}
+
+.divMenu div tr
+{
+    height:40px;
+} 
+
+.divMenu div a
+{
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-family: Arial, Verdana;
+	font-size: 12px;
+	font-weight: bold;
+    width: 180px;
+	color: White;   
+} 
+
+.divMenu div a:hover
+{
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-family: Arial, Verdana;
+	font-size: 12px;
+	font-weight: bold;
+    width: 180px;
+	color: #f79811;   
+}
+
+.MenuPrincipal li
+{
+   text-align:center; 
+    padding:6px 10px 0px 10px;
+	font-family: Arial, Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	width: 180px;
+    color: White;
+}
+
+.MenuPrincipal li:hover
+{
+    text-align:center; 
+    padding: 6px 10px 0px 10px;
+	font-family: Arial, Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	width: 180px;
+    color: #f79811;
+    
+}
+    
+.MenuPrincipal li ul li 
+{
+    padding-left:5px;
+    padding-top:8px;
+    padding-bottom:5px;
+    font-family: Arial, Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: White;  
+    background-color: #6779a1; 
+    text-align:left; 
+}
+
+.MenuPrincipal li ul li:hover
+{
+    padding-left:5px;
+    padding-top:8px;
+    padding-bottom:5px;
+    font-family: Arial, Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #f79811;   
+    background-color: #6779a1;
+    text-align:left;
+}
+
+.MenuPrincipal li ul li a
+{
+    padding-left:5px;
+    padding-top:8px;
+    padding-bottom:5px;
+    font-family: Arial, Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: White;   
+    background-color: #6779a1;
+    text-align:left;
+}
+
+.MenuPrincipal li ul li a:hover
+{
+    padding-left:5px;
+    padding-top:8px;
+    padding-bottom:5px;
+    font-family: Arial, Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #f79811;   
+    background-color: #6779a1;
+    text-align:left;
+}
+
+/* #endregion */
+
+/* #region [ CONTEUDO ] */
+
+.divConteudoCentro
+{
+    z-index: 10;
+    top: 0px;
+    float:left;
+    width:100%;
+    white-space: nowrap;
+    background-color: #ebebeb;
+    opacity:0.7;
+    filter:alpha(opacity=70); 
+    border-radius:10px;
+}
+
+.divConteudoEsquerda
+{
+    float:left;
+    white-space: nowrap;
+    top: 0px;
+    width:6%;
+    text-align:right;
+}
+
+.imgConteudoEsquerda
+{
+    width: 70px;
+    height: 100%;
+    opacity:0.7;
+    filter:alpha(opacity=70); /* For IE8 and earlier */
+    
+    
+}
+
+.divConteudoDireita
+{
+    float:right;
+    white-space: nowrap;
+    top: 0px;
+    width:6%;
+    text-align:left;
+}
+
+.imgConteudoDireita
+{
+    width: 70px;
+    height: 100%;
+    opacity:0.7;
+    filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.imgCABTEC
+ {
+     width:5% ;
+     vertical-align:bottom;
+     padding-right:20px;
+  }
+ 
+/* #endregion */
+
+/* #region [ CADASTRO ] */
+
+.tablePrincipalConteudo
+{
+    vertical-align:top;
+    width:100%;
+    height:100%;
+    color:#223D76;
+}
+
+.trTituloPageCadastro
+{
+    vertical-align:Top;
+    height:30px;
+    max-height:30px;
+}
+
+.tdTituloPageCadastro
+{
+    width:100%;
+    text-align:center;
+}
+
+.tdTituloPageCadastroLabel
+{
+    font-family: Arial, Verdana;
+	font-size: 18px;
+	font-weight: bold;    
+}
+
+.trConteudoPageCadastro
+{
+    vertical-align:top;
+    min-height:300px;
+    height:100%;
+}
+
+.pnlParametro
+{
+    padding-left:50px;
+    width:100%;
+    height:150px;
+}
+
+.pnlParametro legend
+{ 
+    color:#223D76;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pnltdParametro
+{
+    width:480px;
+    height:30px;
+    text-align:right;
+}
+
+.pnlCadastroEditavel
+{
+    padding-left:50px;
+    width:100%;
+    height:150px;
+}
+
+.pnlCadastroEditavelDonwload
+{
+    padding-left:50px;
+    width:100%;
+    height:75px;
+}
+
+.pnlCadastroSimulador
+{
+    padding-left:50px;
+    width:100%;    
+}
+
+.pnlSimuladorRenda
+{
+    padding-left:30px;
+    width:90%;   
+}
+
+.pnlSimuladorSub
+{      
+    width:85%;   
+}
+
+.pnlCadastroEditavel legend
+{
+    color:#223D76;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pnlCadastroEditavelDonwload legend
+{
+    color:#223D76;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pnlCadastroSimulador legend
+{
+    color:#223D76;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pnlSimuladorRenda legend
+{   
+    font-family: Arial, Verdana;
+    font-size:12px;
+    font-weight:bold;
+    color:#223D76;  
+}
+
+.pnlSimuladorSub legend
+{   
+    font-family: Arial, Verdana;
+    font-size:12px;
+    font-weight:bold;
+    color:#223D76;  
+}
+
+.pnlCadastroLeitura
+{
+    padding-left:50px;
+    width:100%;
+    height:150px;
+}
+
+.pnlCadastroLeitura legend
+{
+    color:#223D76;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pnltdCadastroLeitura
+{
+    width:250px;
+    height:30px;
+    text-align:right;
+}
+
+.pnltdCheck
+{
+    width:300px;
+    height:30px;
+    text-align:left;
+}
+
+.pnltdLabelDataControle
+{
+    width:230px;
+    height:30px;
+    text-align:right;
+}
+
+.pnltdDataControle
+{
+    width:100px;
+    height:30px;
+    text-align:left;
+}
+
+.pnltd3ColunaLeftLabel
+{
+    width:100px;
+    height:30px;
+    text-align:right;
+}
+
+.pnltd3ColunaLeftText
+{
+    width:150px;
+    height:30px;
+    text-align:left;
+}
+
+.pnltd3ColunaCenterLabel
+{
+    width:100px;
+    height:30px;
+    text-align:right;
+}
+
+.pnltd3ColunaCenterText
+{
+    width:100px;
+    height:30px;
+    text-align:left;
+}
+
+.pnltd3ColunaRightLabel
+{
+    width:150px;
+    height:30px;
+    text-align:right;
+}
+
+.pnltd3ColunaRightText
+{
+    width:150px;
+    height:30px;
+    text-align:left;
+}
+
+/* #endregion */
+
+/* #region [ CONSULTA ] */
+
+.pnlConsulta
+{
+    padding-left:50px;
+    /*width:700px;*/
+    width:100%;
+    height:100px;
+}
+
+.pnlConsulta3tr
+{
+    padding-left:50px;
+    /*width:700px;*/
+    width:100%;
+    height:130px;
+}
+
+.pnlConsulta legend
+{ 
+    color:#223D76;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pnlConsulta3tr legend
+{ 
+    color:#223D76;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pnltdConsulta
+{
+    width:150px;
+    height:30px;
+    text-align:right;
+}
+
+.pnltdConsultaLeft
+{
+    width:150px;
+    height:30px;
+    text-align:left;
+}
+
+.pnlGridConsulta
+{
+    padding-left:50px;
+    text-align:center; 
+    width:100%;
+    height:250px;    
+}
+
+.pnlGridConsulta legend
+{
+    color:#223D76;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pnlGridConsulta3tr
+{
+    padding-left:50px;
+    text-align:center; 
+    width:100%;
+    height:200px;    
+}
+
+.pnlGridConsulta3tr legend
+{
+    color:#223D76;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.gridConsulta
+{
+    margin-top:10px;
+    margin-left:20px;
+    width:90%;   
+    
+}
+
+.gridHeader
+{    
+    background-color:#d6d6d6;
+}
+
+.gridFooter
+{    
+    background-color:#d6d6d6;
+    font-family: Arial, Verdana;
+    font-size:14px;
+    font-weight: bold;
+}
+
+.gridConsultaRow
+{
+    font-family: Arial, Verdana;
+    font-size: 12px;
+}
+
+.gridConsultaRowAlternating
+{
+    font-family: Arial, Verdana;
+    font-size: 12px;
+    background-color:#d6d6d6;
+}
+
+/* #endregion */
+
+/* #region [ ASSOCIAR ] */
+
+ .pnlAssociaColetor
+{
+    padding-left:50px;
+    width:320px;
+    height:310px;
+}
+
+.pnlAssociaColetor legend
+{ 
+    color:#223D76;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+ .pnlAssociaColetorMiddle
+{
+    width:220px;
+    height:310px;
+    padding-left:20px;
+}
+
+.pnlAssociaColetorMiddle legend
+{ 
+    color:#223D76;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+ .pnlAssociaColetorLeft
+{
+    width:320px;
+    height:310px;
+    padding-left:20px;
+}
+
+.pnlAssociaColetorLeft legend
+{ 
+    color:#223D76;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pnlAssociaButtonsColetor
+{
+    width:30px;
+    height:50px;
+    padding-top:140px;
+}
+
+.pnlAssociaButtonsVendedor
+{
+    width:30px;
+    height:50px;
+    padding-top:240px;
+}
+
+/* #endregion */
+
+/* #region [ BUTTONS ] */
+
+.tableButtons
+{    
+    height:100%;
+}
+
+.tdButtons
+{ 
+    width:50px;
+}
+
+.tdModalButtons
+{
+    background-image: url(../Images/Menu.png);
+    width:100%;
+    border-radius:10px;
+    vertical-align:middle;
+}
+
+.tdSubButtons
+{ 
+    width:40px;
+}
+
+/* #endregion */
+
+/* #region [ SUMMARY ] */
+
+.trSummaryPageCadastro
+{
+    vertical-align:middle;
+    height:20px;
+}
+
+.tdSummaryPageCadastro
+{
+    width:100%;
+    height:20px;
+    text-align:left;
+    padding-left:50px;
+}
+
+
+/* #endregion */
+
+/* #region [ MESSAGE ] */
+
+.pnlMensagem
+{
+    vertical-align:middle;
+    min-height:20px;
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+ }
+
+.mensagem
+{
+    font-family: Arial, Verdana;
+	font-size: 12px;
+    background-color:#ebebeb; 
+}
+
+.ui-dialog  
+{
+    position: fixed; 
+    padding: .2em; 
+    width: 300px; 
+    overflow: hidden; 
+    background-color:#ebebeb;
+}
+
+.ui-dialog .ui-dialog-titlebar 
+{   
+    padding: .4em 1em; 
+    position: relative; 
+    background-image: url(../Images/Menu.png);  
+ 	font-family: Arial, Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: White;   
+	
+ }
+ 
+.ui-dialog .ui-dialog-title 
+{ 
+    float: left; 
+    margin: .1em 16px .1em 0; 
+    
+} 
+
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+.ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px;   }
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
+
+.ui-dialog .ui-dialog-content  
+{
+    position: relative; 
+    border: 0; 
+    padding: .5em 1em; 
+    overflow: auto; 
+    zoom: 1; 
+    background-color:#ebebeb;
+}
+
+.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0;  margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
+.ui-dialog .ui-dialog-buttonpane button 
+{ 
+    margin: .5em .4em .5em 0; 
+    cursor: pointer; 
+    background-image: url(../Images/Menu.png);  
+    font-family: Arial, Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: White;   
+}
+.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+
+/* #endregion */
+
+/* #region [ BLOQUEIO ] */
+
+.modalBackground
+{
+	filter: Alpha(Opacity=40);
+	-moz-opacity: 0.4;
+	opacity: 0.4;
+    width: 100%;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	z-index: 500;
+	top: 0px;
+	left: 0px;   
+}
+
+.panelBloqueio
+{    
+    max-height: 800px;
+    width:400px;
+    background-color: #ebebeb;
+    color:#223D76;
+    border-radius:10px;
+}
+
+.tdTituloModal
+{
+    vertical-align:middle;
+    background-image: url(../Images/Menu.png);
+    border-radius:10px;
+    text-align:center; 
+    padding:6px 10px 0px 10px;
+	font-family: Arial, Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	width: auto;
+    color: White;    
+ }
+ 
+ .tdLabelModal
+{
+    text-align:right;
+    vertical-align:middle;
+    font-family: Arial, Verdana;
+    font-size:12px;
+    font-weight:bold;
+    color:#223D76;   
+ }
+ 
+  .tdLabelCenterModal
+{
+    text-align:center;
+    vertical-align:middle;
+    font-family: Arial, Verdana;
+    font-size:12px;
+    font-weight:bold;
+    color:#223D76;   
+ }
+
+.tdTextCenterModal
+{
+    text-align:center;
+    vertical-align:middle;
+    font-family: Arial, Verdana;
+    font-size:12px;
+    color:#223D76;   
+ }
+
+ .tdTextModal
+{
+    text-align:left;
+    vertical-align:middle;
+    font-family: Arial, Verdana;
+    font-size:12px;
+    color:#223D76;   
+ }
+ 
+/* #endregion */
+
+/* #region [ SIMULADOR ] */
+
+.panelSimulador
+{
+    max-height: 620px;
+    min-width:660px;
+    max-width:800px;
+    background-color: #ebebeb;
+    color:#223D76;
+    border-radius:10px;    
+}
+
+.subPanelSimulador
+{
+    max-height: 800px;
+    width:400px;
+    background-color: #ebebeb;
+    color:#223D76;
+    border-radius:10px;
+}
+
+.tdTituloModal
+{
+    vertical-align:middle;
+    background-image: url(../Images/Menu.png);
+    border-radius:10px;
+    text-align:center; 
+    padding:6px 10px 0px 10px;
+	font-family: Arial, Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	width: auto;
+    color: White;
+    
+ }
+ 
+.tdTituloModalSubNovo
+{
+    vertical-align:middle;
+    border-radius:10px;
+    text-align:center; 
+    padding:6px 10px 0px 10px;
+	font-family: Arial, Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	width: auto;
+    color:#223D76;
+    
+ }
+
+ .tdLabelModal
+{
+    text-align:right;
+    vertical-align:middle;
+    font-family: Arial, Verdana;
+    font-size:12px;
+    font-weight:bold;
+    color:#223D76;   
+ }
+ 
+ .tdTextModal
+{
+    text-align:left;
+    vertical-align:middle;
+    font-family: Arial, Verdana;
+    font-size:12px;
+    color:#223D76;   
+ }
+ 
+
+/* #endregion */
+
+/* #region [ CONTROLE ] */
+
+.controleDDL
+{
+    border-color :Black;
+    border-width: thin;
+}
+
+
+/* #endregion */
+
+/* #region [ REPEATER ] */
+
+.repeaterHeaderPrincipal
+{    
+    background-color:#d6d6d6;
+    font-family: Arial, Verdana;
+    font-size:14px;
+    font-weight: bold;   
+}
+
+.repeaterHeaderDetalhe
+{    
+    background-color:#d6d6d6;
+    font-family: Arial, Verdana;
+    font-size:12px;
+    font-weight: bold;   
+}
+
+.repeaterItemPrincipal
+{
+    font-family: Arial, Verdana;
+    font-size: 12px;
+}
+
+/* #endregion */
+
+/* #region [ REPORT ] */
+
+.divConteudoReport{
+    background-color:white;   
+    height:450px;
+    overflow-x: auto;
+    overflow-y: auto; 
+    padding-left:50px;   
+    width:calc(100% - 250px);
+}
+
+/* #endregion */
+

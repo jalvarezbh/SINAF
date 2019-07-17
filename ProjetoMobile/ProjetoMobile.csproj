@@ -1,0 +1,409 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF281A34-B3E6-4CAC-8853-9126A1E981C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetoMobile</RootNamespace>
+    <AssemblyName>ProjetoMobile</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>ProjetoMobile</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <StartupObject>ProjetoMobile.Program</StartupObject>
+    <ApplicationIcon>Cab.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FTP_Mobile, Version=1.0.4343.30483, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Windowsce.Forms" />
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Symbol, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL" />
+    <Reference Include="Symbol.Audio, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL" />
+    <Reference Include="Symbol.Fusion, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL" />
+    <Reference Include="Symbol.Keyboard, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL" />
+    <Reference Include="Symbol.ResourceCoordination, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL" />
+    <Reference Include="Symbol.StandardForms, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controle\BarraInferior.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controle\BarraInferior.designer.cs">
+      <DependentUpon>BarraInferior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controle\BarraSuperior.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controle\BarraSuperior.designer.cs">
+      <DependentUpon>BarraSuperior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\TGPSDOMINIO.cs" />
+    <Compile Include="frmAtualizacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAtualizacao.designer.cs">
+      <DependentUpon>frmAtualizacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmar.designer.cs">
+      <DependentUpon>frmConfirmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntrevistaAba4Endereco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntrevistaAba3Dados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntrevistaAba2Formulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntrevistaAba1Pessoal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntrevistaAba5Simulador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntrevistaAba5SimuladorAgregado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntrevistaAba5SimuladorPlano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntrevistaAba5SimuladorRenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntrevistaAba5SimuladorTabelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTabela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTabela.Designer.cs">
+      <DependentUpon>frmTabela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\DataGridCustomLightColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grid\DataGridCustomCheckBoxColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grid\DataGridCustomColumnBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grid\DataGridCustomComboBoxColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grid\DataGridCustomDateTimePickerColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grid\DataGridCustomTextBoxColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grid\DataGridCustomUpDownColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Persistencia\TGPSPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TParametroPERSISTENCIA.cs" />
+    <Compile Include="Util\Bateria.cs" />
+    <Compile Include="Util\ControleAtualizacao.cs" />
+    <Compile Include="Dominio\TAgendamentoDOMINIO.cs" />
+    <Compile Include="Dominio\TAgregadoDOMINIO.cs" />
+    <Compile Include="Dominio\TPlanoCasalDOMINIO.cs" />
+    <Compile Include="Dominio\TPlanoProtecaoDOMINIO.cs" />
+    <Compile Include="Dominio\TPlanoSeniorDOMINIO.cs" />
+    <Compile Include="Dominio\TSimuladorProdutoDOMINIO.cs" />
+    <Compile Include="Dominio\TSimuladorSubAgregadoDOMINIO.cs" />
+    <Compile Include="Dominio\TSimuladorSubFuneralDOMINIO.cs" />
+    <Compile Include="Dominio\TSimuladorSubRendaDOMINIO.cs" />
+    <Compile Include="frmAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgendamento.Designer.cs">
+      <DependentUpon>frmAgendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeedBackAlterado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeedBackAlterado.Designer.cs">
+      <DependentUpon>frmFeedBackAlterado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntrevista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntrevista.Designer.cs">
+      <DependentUpon>frmEntrevista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\Enumeradores\Enum.cs" />
+    <Compile Include="Dominio\TEntrevistadoDOMINIO.cs" />
+    <Compile Include="Dominio\TEntrevistadoEnderecoDOMINIO.cs" />
+    <Compile Include="Dominio\TEntrevistaDOMINIO.cs" />
+    <Compile Include="Dominio\TProfissaoDOMINIO.cs" />
+    <Compile Include="Dominio\TRespostaDOMINIO.cs" />
+    <Compile Include="frmDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDialog.designer.cs">
+      <DependentUpon>frmDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFundo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFundo.designer.cs">
+      <DependentUpon>frmFundo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuAcesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuAcesso.designer.cs">
+      <DependentUpon>frmMenuAcesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelAgendamento.Designer.cs">
+      <DependentUpon>frmSelAgendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelFormulario.Designer.cs">
+      <DependentUpon>frmSelFormulario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\Common\CreateDataBase.cs" />
+    <Compile Include="Persistencia\Common\DataBaseLocator.cs" />
+    <Compile Include="Persistencia\TAgendamentoPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TCombosEnumPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TEntrevistadoEnderecoPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TEntrevistadoPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TEntrevistaPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TEstadoPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TFaixaPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TLogradouroPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TPlanoCasalPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TPlanoPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TPlanoProtecaoPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TPlanoSeniorPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TProfissaoPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TRespostaPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TSimuladorProdutoPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TSimuladorSubAgregadoPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TSimuladorSubFuneralPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TSimuladorSubRendaPERSISTENCIA.cs" />
+    <Compile Include="Persistencia\TUsuarioPERSISTENCIA.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controle\BarraInferior.resx">
+      <DependentUpon>BarraInferior.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controle\BarraSuperior.resx">
+      <DependentUpon>BarraSuperior.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgendamento.resx">
+      <DependentUpon>frmAgendamento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAtualizacao.resx">
+      <DependentUpon>frmAtualizacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmar.resx">
+      <DependentUpon>frmConfirmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeedBackAlterado.resx">
+      <DependentUpon>frmFeedBackAlterado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntrevista.resx">
+      <DependentUpon>frmEntrevista.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDialog.resx">
+      <DependentUpon>frmDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFundo.resx">
+      <DependentUpon>frmFundo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuAcesso.resx">
+      <DependentUpon>frmMenuAcesso.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelAgendamento.resx">
+      <DependentUpon>frmSelAgendamento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelFormulario.resx">
+      <DependentUpon>frmSelFormulario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTabela.resx">
+      <DependentUpon>frmTabela.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Util\CaixaMensagem.cs" />
+    <Compile Include="Util\ControleHardware.cs" />
+    <Compile Include="Util\DataHora.cs" />
+    <Compile Include="Util\GZip.cs" />
+    <Compile Include="Util\HashMD5.cs" />
+    <Compile Include="Util\LerGravarXML.cs" />
+    <Compile Include="Util\LogErro.cs" />
+    <Compile Include="Util\Mask.cs" />
+    <Compile Include="Util\MostraCursor.cs" />
+    <Compile Include="Util\PanelMobile.cs" />
+    <Compile Include="Util\PastaSistema.cs" />
+    <Compile Include="Util\ScrollBarHelper.cs" />
+    <Compile Include="Util\UserActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\Validacoes.cs" />
+    <Compile Include="Web References\wsColetor\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cab.ico" />
+    <Content Include="DLL\FTP_Mobile.dll" />
+    <Content Include="DLL\GridLayout.dll" />
+    <Content Include="DLL\Symbol.Audio.dll" />
+    <Content Include="DLL\Symbol.dll" />
+    <Content Include="DLL\Symbol.Fusion.dll" />
+    <Content Include="DLL\Symbol.Keyboard.dll" />
+    <Content Include="DLL\Symbol.ResourceCoordination.dll" />
+    <Content Include="DLL\Symbol.StandardForms.dll" />
+    <Content Include="DLL\System.Data.SqlServerCe.dll" />
+    <Content Include="Resources\accept32.gif" />
+    <None Include="Resources\Bateria_25.gif" />
+    <None Include="Resources\Bateria_50.gif" />
+    <None Include="Resources\Bateria_75.gif" />
+    <None Include="Resources\Bateria_100.gif" />
+    <None Include="Resources\accept32_white.gif" />
+    <Content Include="Resources\Coletor-Topo_novo.jpg" />
+    <Content Include="Resources\configuracoes.gif" />
+    <Content Include="Resources\database_process24.ico" />
+    <Content Include="Resources\database_process32.ico" />
+    <Content Include="Resources\eject24.ico" />
+    <Content Include="Resources\Fechado.GIF" />
+    <Content Include="Resources\fundo_azul.jpg" />
+    <Content Include="Resources\Menu_folder_accept.gif" />
+    <Content Include="Resources\Menu_folder_edit.gif" />
+    <Content Include="Resources\Menu_folder_tabelas.gif" />
+    <Content Include="Resources\Menu_note_accept.gif" />
+    <Content Include="Resources\Menu_note_edit.gif" />
+    <Content Include="Resources\Menu_note_remove.gif" />
+    <Content Include="Resources\remove32.gif" />
+    <None Include="Web References\wsColetor\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsColetor\SyncColetor.disco" />
+    <None Include="Resources\remove32_white.gif" />
+    <None Include="Resources\Sinc38.ico" />
+    <None Include="Resources\Sinc32.ico" />
+    <None Include="Web References\wsColetor\SyncColetor.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://sql-cabtec/SINAF/Service/SyncColetor.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\wsColetor\</RelPath>
+      <UpdateFromURL>http://sql-cabtec/SINAF/Service/SyncColetor.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

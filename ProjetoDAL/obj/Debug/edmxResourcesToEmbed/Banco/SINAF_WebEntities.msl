@@ -1,0 +1,709 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="SINAFModelStoreContainer" CdmEntityContainer="SINAF_WebEntities">
+    <EntitySetMapping Name="HistoricoTColetor">
+      <EntityTypeMapping TypeName="SINAFModel.HistoricoTColetor">
+        <MappingFragment StoreEntitySet="HistoricoTColetor">
+          <ScalarProperty Name="IDHistoricoColetor" ColumnName="IDHistoricoColetor" />
+          <ScalarProperty Name="NumeroColetor" ColumnName="NumeroColetor" />
+          <ScalarProperty Name="DataUltimoSincronismo" ColumnName="DataUltimoSincronismo" />
+          <ScalarProperty Name="NumeroTotalSincronismo" ColumnName="NumeroTotalSincronismo" />
+          <ScalarProperty Name="NumeroTotalEntrevista" ColumnName="NumeroTotalEntrevista" />
+          <ScalarProperty Name="VersaoSistema" ColumnName="VersaoSistema" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HistoricoTEntrevistaDownload">
+      <EntityTypeMapping TypeName="SINAFModel.HistoricoTEntrevistaDownload">
+        <MappingFragment StoreEntitySet="HistoricoTEntrevistaDownload">
+          <ScalarProperty Name="IDHistoricoEntrevistaDownload" ColumnName="IDHistoricoEntrevistaDownload" />
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HistoricoTEntrevistaUpload">
+      <EntityTypeMapping TypeName="SINAFModel.HistoricoTEntrevistaUpload">
+        <MappingFragment StoreEntitySet="HistoricoTEntrevistaUpload">
+          <ScalarProperty Name="IDHistoricoEntrevistaUpload" ColumnName="IDHistoricoEntrevistaUpload" />
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HistoricoTSincronismo">
+      <EntityTypeMapping TypeName="SINAFModel.HistoricoTSincronismo">
+        <MappingFragment StoreEntitySet="HistoricoTSincronismo">
+          <ScalarProperty Name="IDHistoricoSincronismo" ColumnName="IDHistoricoSincronismo" />
+          <ScalarProperty Name="DataSincronismo" ColumnName="DataSincronismo" />
+          <ScalarProperty Name="NumeroUpload" ColumnName="NumeroUpload" />
+          <ScalarProperty Name="NumeroDownload" ColumnName="NumeroDownload" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileTEntrevista">
+      <EntityTypeMapping TypeName="SINAFModel.MobileTEntrevista">
+        <MappingFragment StoreEntitySet="MobileTEntrevista">
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+          <ScalarProperty Name="CodigoColaborador" ColumnName="CodigoColaborador" />
+          <ScalarProperty Name="DataEntrevista" ColumnName="DataEntrevista" />
+          <ScalarProperty Name="CodigoUsuario" ColumnName="CodigoUsuario" />
+          <ScalarProperty Name="DataInclusao" ColumnName="DataInclusao" />
+          <ScalarProperty Name="CodigoQuestionario" ColumnName="CodigoQuestionario" />
+          <ScalarProperty Name="OrigemVenda" ColumnName="OrigemVenda" />
+          <ScalarProperty Name="Exportado" ColumnName="Exportado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileTEntrevistado">
+      <EntityTypeMapping TypeName="SINAFModel.MobileTEntrevistado">
+        <MappingFragment StoreEntitySet="MobileTEntrevistado">
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="CPF" ColumnName="CPF" />
+          <ScalarProperty Name="DataNascimento" ColumnName="DataNascimento" />
+          <ScalarProperty Name="EstadoCivil" ColumnName="EstadoCivil" />
+          <ScalarProperty Name="IDProfissao" ColumnName="IDProfissao" />
+          <ScalarProperty Name="FaixaEtaria" ColumnName="FaixaEtaria" />
+          <ScalarProperty Name="FaixaEtariaConjuge" ColumnName="FaixaEtariaConjuge" />
+          <ScalarProperty Name="IDProfissaoConjuge" ColumnName="IDProfissaoConjuge" />
+          <ScalarProperty Name="CapitalLimitado" ColumnName="CapitalLimitado" />
+          <ScalarProperty Name="CapitalLimitadoConjuge" ColumnName="CapitalLimitadoConjuge" />
+          <ScalarProperty Name="DDD" ColumnName="DDD" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="DDDCelular" ColumnName="DDDCelular" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Informacao" ColumnName="Informacao" />
+          <ScalarProperty Name="Exportado" ColumnName="Exportado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileTEntrevistadoEndereco">
+      <EntityTypeMapping TypeName="SINAFModel.MobileTEntrevistadoEndereco">
+        <MappingFragment StoreEntitySet="MobileTEntrevistadoEndereco">
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+          <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+          <ScalarProperty Name="Cidade" ColumnName="Cidade" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="Complemento" ColumnName="Complemento" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Exportado" ColumnName="Exportado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileTGPS">
+      <EntityTypeMapping TypeName="SINAFModel.MobileTGPS">
+        <MappingFragment StoreEntitySet="MobileTGPS">
+          <ScalarProperty Name="IDMobileTGPS" ColumnName="IDMobileTGPS" />
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileTIncompleta">
+      <EntityTypeMapping TypeName="SINAFModel.MobileTIncompleta">
+        <MappingFragment StoreEntitySet="MobileTIncompleta">
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+          <ScalarProperty Name="DataEntrevista" ColumnName="DataEntrevista" />
+          <ScalarProperty Name="CodigoUsuario" ColumnName="CodigoUsuario" />
+          <ScalarProperty Name="CapitalLimitado" ColumnName="CapitalLimitado" />
+          <ScalarProperty Name="CapitalLimitadoConjuge" ColumnName="CapitalLimitadoConjuge" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="CPF" ColumnName="CPF" />
+          <ScalarProperty Name="DataNascimento" ColumnName="DataNascimento" />
+          <ScalarProperty Name="DataNascimentoConjuge" ColumnName="DataNascimentoConjuge" />
+          <ScalarProperty Name="DDD" ColumnName="DDD" />
+          <ScalarProperty Name="DDDCelular" ColumnName="DDDCelular" />
+          <ScalarProperty Name="EstadoCivil" ColumnName="EstadoCivil" />
+          <ScalarProperty Name="FaixaEtaria" ColumnName="FaixaEtaria" />
+          <ScalarProperty Name="FaixaEtariaConjuge" ColumnName="FaixaEtariaConjuge" />
+          <ScalarProperty Name="IDProfissao" ColumnName="IDProfissao" />
+          <ScalarProperty Name="IDProfissaoConjuge" ColumnName="IDProfissaoConjuge" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="Cidade" ColumnName="Cidade" />
+          <ScalarProperty Name="Complemento" ColumnName="Complemento" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+          <ScalarProperty Name="DataInclusao" ColumnName="DataInclusao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileTIncompletaResposta">
+      <EntityTypeMapping TypeName="SINAFModel.MobileTIncompletaResposta">
+        <MappingFragment StoreEntitySet="MobileTIncompletaResposta">
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+          <ScalarProperty Name="CodigoPergunta" ColumnName="CodigoPergunta" />
+          <ScalarProperty Name="CodigoOpcao" ColumnName="CodigoOpcao" />
+          <ScalarProperty Name="CodigoSeqResposta" ColumnName="CodigoSeqResposta" />
+          <ScalarProperty Name="TextoResposta" ColumnName="TextoResposta" />
+          <ScalarProperty Name="TextoSubResposta" ColumnName="TextoSubResposta" />
+          <ScalarProperty Name="IDIncompletaResposta" ColumnName="IDIncompletaResposta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileTResposta">
+      <EntityTypeMapping TypeName="SINAFModel.MobileTResposta">
+        <MappingFragment StoreEntitySet="MobileTResposta">
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+          <ScalarProperty Name="CodigoPergunta" ColumnName="CodigoPergunta" />
+          <ScalarProperty Name="CodigoOpcao" ColumnName="CodigoOpcao" />
+          <ScalarProperty Name="CodigoSeqResposta" ColumnName="CodigoSeqResposta" />
+          <ScalarProperty Name="TextoResposta" ColumnName="TextoResposta" />
+          <ScalarProperty Name="TextoSubResposta" ColumnName="TextoSubResposta" />
+          <ScalarProperty Name="IDResposta" ColumnName="IDResposta" />
+          <ScalarProperty Name="Exportado" ColumnName="Exportado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileTSimuladorProduto">
+      <EntityTypeMapping TypeName="SINAFModel.MobileTSimuladorProduto">
+        <MappingFragment StoreEntitySet="MobileTSimuladorProduto">
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+          <ScalarProperty Name="Produto" ColumnName="Produto" />
+          <ScalarProperty Name="PremioTotal" ColumnName="PremioTotal" />
+          <ScalarProperty Name="FaixaEtaria" ColumnName="FaixaEtaria" />
+          <ScalarProperty Name="FaixaEtariaConjuge" ColumnName="FaixaEtariaConjuge" />
+          <ScalarProperty Name="RespostaBaseRenda" ColumnName="RespostaBaseRenda" />
+          <ScalarProperty Name="RespostaBaseDisposto" ColumnName="RespostaBaseDisposto" />
+          <ScalarProperty Name="IDSimuladorProduto" ColumnName="IDSimuladorProduto" />
+          <ScalarProperty Name="TipoRegistro" ColumnName="TipoRegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileTSimuladorSubAgregado">
+      <EntityTypeMapping TypeName="SINAFModel.MobileTSimuladorSubAgregado">
+        <MappingFragment StoreEntitySet="MobileTSimuladorSubAgregado">
+          <ScalarProperty Name="IDSimuladorSubAgregado" ColumnName="IDSimuladorSubAgregado" />
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+          <ScalarProperty Name="GrauParentesco" ColumnName="GrauParentesco" />
+          <ScalarProperty Name="Idade" ColumnName="Idade" />
+          <ScalarProperty Name="PremioAgregado" ColumnName="PremioAgregado" />
+          <ScalarProperty Name="Funeral" ColumnName="Funeral" />
+          <ScalarProperty Name="IDSimuladorProduto" ColumnName="IDSimuladorProduto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileTSimuladorSubFuneral">
+      <EntityTypeMapping TypeName="SINAFModel.MobileTSimuladorSubFuneral">
+        <MappingFragment StoreEntitySet="MobileTSimuladorSubFuneral">
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+          <ScalarProperty Name="ProtecaoCoberturaMorte" ColumnName="ProtecaoCoberturaMorte" />
+          <ScalarProperty Name="ProtecaoCoberturaAcidente" ColumnName="ProtecaoCoberturaAcidente" />
+          <ScalarProperty Name="ProtecaoCoberturaEmergencia" ColumnName="ProtecaoCoberturaEmergencia" />
+          <ScalarProperty Name="ProtecaoCategoria" ColumnName="ProtecaoCategoria" />
+          <ScalarProperty Name="ProtecaoPremio" ColumnName="ProtecaoPremio" />
+          <ScalarProperty Name="SeniorCoberturaMorte" ColumnName="SeniorCoberturaMorte" />
+          <ScalarProperty Name="SeniorCategoria" ColumnName="SeniorCategoria" />
+          <ScalarProperty Name="SeniorPremio" ColumnName="SeniorPremio" />
+          <ScalarProperty Name="CasalCoberturaMorte" ColumnName="CasalCoberturaMorte" />
+          <ScalarProperty Name="CasalCoberturaConjuge" ColumnName="CasalCoberturaConjuge" />
+          <ScalarProperty Name="CasalCategoria" ColumnName="CasalCategoria" />
+          <ScalarProperty Name="CasalPremio" ColumnName="CasalPremio" />
+          <ScalarProperty Name="IDSimuladorProduto" ColumnName="IDSimuladorProduto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileTSimuladorSubRenda">
+      <EntityTypeMapping TypeName="SINAFModel.MobileTSimuladorSubRenda">
+        <MappingFragment StoreEntitySet="MobileTSimuladorSubRenda">
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+          <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+          <ScalarProperty Name="ValorRenda" ColumnName="ValorRenda" />
+          <ScalarProperty Name="Capital" ColumnName="Capital" />
+          <ScalarProperty Name="PremioRenda" ColumnName="PremioRenda" />
+          <ScalarProperty Name="IDSimuladorProduto" ColumnName="IDSimuladorProduto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServicoTEntrevista">
+      <EntityTypeMapping TypeName="SINAFModel.ServicoTEntrevista">
+        <MappingFragment StoreEntitySet="ServicoTEntrevista">
+          <ScalarProperty Name="IDServico" ColumnName="IDServico" />
+          <ScalarProperty Name="CodigoEntrevista" ColumnName="CodigoEntrevista" />
+          <ScalarProperty Name="CodigoColaborador" ColumnName="CodigoColaborador" />
+          <ScalarProperty Name="DataEntrevista" ColumnName="DataEntrevista" />
+          <ScalarProperty Name="Mensagem" ColumnName="Mensagem" />
+          <ScalarProperty Name="DataErro" ColumnName="DataErro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAgendamento">
+      <EntityTypeMapping TypeName="SINAFModel.TAgendamento">
+        <MappingFragment StoreEntitySet="TAgendamento">
+          <ScalarProperty Name="IDAgendamento" ColumnName="IDAgendamento" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="DataNascimento" ColumnName="DataNascimento" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="Logradouro" ColumnName="Logradouro" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Complemento" ColumnName="Complemento" />
+          <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+          <ScalarProperty Name="Cidade" ColumnName="Cidade" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="PontoReferencia" ColumnName="PontoReferencia" />
+          <ScalarProperty Name="DataAgendada" ColumnName="DataAgendada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAtendimento">
+      <EntityTypeMapping TypeName="SINAFModel.TAtendimento">
+        <MappingFragment StoreEntitySet="TAtendimento">
+          <ScalarProperty Name="IDAtendimento" ColumnName="IDAtendimento" />
+          <ScalarProperty Name="IDBairro" ColumnName="IDBairro" />
+          <ScalarProperty Name="IDCidade" ColumnName="IDCidade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBairro">
+      <EntityTypeMapping TypeName="SINAFModel.TBairro">
+        <MappingFragment StoreEntitySet="TBairro">
+          <ScalarProperty Name="IDBairro" ColumnName="IDBairro" />
+          <ScalarProperty Name="NomeBairro" ColumnName="NomeBairro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCidade">
+      <EntityTypeMapping TypeName="SINAFModel.TCidade">
+        <MappingFragment StoreEntitySet="TCidade">
+          <ScalarProperty Name="IDCidade" ColumnName="IDCidade" />
+          <ScalarProperty Name="NomeCidade" ColumnName="NomeCidade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TColetor">
+      <EntityTypeMapping TypeName="SINAFModel.TColetor">
+        <MappingFragment StoreEntitySet="TColetor">
+          <ScalarProperty Name="IDColetor" ColumnName="IDColetor" />
+          <ScalarProperty Name="NumeroSerie" ColumnName="NumeroSerie" />
+          <ScalarProperty Name="IMEI" ColumnName="IMEI" />
+          <ScalarProperty Name="Fabricante" ColumnName="Fabricante" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="CodigoUsuarioResponsavel" ColumnName="CodigoUsuarioResponsavel" />
+          <ScalarProperty Name="CodigoUsuarioCadastro" ColumnName="CodigoUsuarioCadastro" />
+          <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+          <ScalarProperty Name="DataInativacao" ColumnName="DataInativacao" />
+          <ScalarProperty Name="UsoBackup" ColumnName="UsoBackup" />
+          <ScalarProperty Name="MotivoInativacao" ColumnName="MotivoInativacao" />
+          <ScalarProperty Name="DataUltimaSincronizacao" ColumnName="DataUltimaSincronizacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEstado">
+      <EntityTypeMapping TypeName="SINAFModel.TEstado">
+        <MappingFragment StoreEntitySet="TEstado">
+          <ScalarProperty Name="IDEstado" ColumnName="IDEstado" />
+          <ScalarProperty Name="Sigla" ColumnName="Sigla" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TFaixa">
+      <EntityTypeMapping TypeName="SINAFModel.TFaixa">
+        <MappingFragment StoreEntitySet="TFaixa">
+          <ScalarProperty Name="IDFaixa" ColumnName="IDFaixa" />
+          <ScalarProperty Name="CodigoFaixa" ColumnName="CodigoFaixa" />
+          <ScalarProperty Name="Usado" ColumnName="Usado" />
+          <ScalarProperty Name="DataDownloadBase" ColumnName="DataDownloadBase" />
+          <ScalarProperty Name="DataUtilizado" ColumnName="DataUtilizado" />
+          <ScalarProperty Name="IDHistoricoTSincronismoDownload" ColumnName="IDHistoricoTSincronismoDownload" />
+          <ScalarProperty Name="IDHistoricoTSincronismoUpload" ColumnName="IDHistoricoTSincronismoUpload" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TFilial">
+      <EntityTypeMapping TypeName="SINAFModel.TFilial">
+        <MappingFragment StoreEntitySet="TFilial">
+          <ScalarProperty Name="IDFilial" ColumnName="IDFilial" />
+          <ScalarProperty Name="NomeFilial" ColumnName="NomeFilial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TLog">
+      <EntityTypeMapping TypeName="SINAFModel.TLog">
+        <MappingFragment StoreEntitySet="TLog">
+          <ScalarProperty Name="IDLog" ColumnName="IDLog" />
+          <ScalarProperty Name="Tabela" ColumnName="Tabela" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TLogradouro">
+      <EntityTypeMapping TypeName="SINAFModel.TLogradouro">
+        <MappingFragment StoreEntitySet="TLogradouro">
+          <ScalarProperty Name="IDLogradouro" ColumnName="IDLogradouro" />
+          <ScalarProperty Name="NomeLogradouro" ColumnName="NomeLogradouro" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMenu">
+      <EntityTypeMapping TypeName="SINAFModel.TMenu">
+        <MappingFragment StoreEntitySet="TMenu">
+          <ScalarProperty Name="IDMenu" ColumnName="IDMenu" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="IDMenuPai" ColumnName="IDMenuPai" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Ordenacao" ColumnName="Ordenacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMenuPerfil">
+      <EntityTypeMapping TypeName="SINAFModel.TMenuPerfil">
+        <MappingFragment StoreEntitySet="TMenuPerfil">
+          <ScalarProperty Name="IDMenuPerfil" ColumnName="IDMenuPerfil" />
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOrigemVenda">
+      <EntityTypeMapping TypeName="SINAFModel.TOrigemVenda">
+        <MappingFragment StoreEntitySet="TOrigemVenda">
+          <ScalarProperty Name="IDOrigemVenda" ColumnName="IDOrigemVenda" />
+          <ScalarProperty Name="CodigoOrigemVenda" ColumnName="CodigoOrigemVenda" />
+          <ScalarProperty Name="NomeOrigemVenda" ColumnName="NomeOrigemVenda" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TParametro">
+      <EntityTypeMapping TypeName="SINAFModel.TParametro">
+        <MappingFragment StoreEntitySet="TParametro">
+          <ScalarProperty Name="IDParametro" ColumnName="IDParametro" />
+          <ScalarProperty Name="TempoLogOff" ColumnName="TempoLogOff" />
+          <ScalarProperty Name="PrazoSincronismoDia" ColumnName="PrazoSincronismoDia" />
+          <ScalarProperty Name="EstoqueMaximoWeb" ColumnName="EstoqueMaximoWeb" />
+          <ScalarProperty Name="EstoqueMinimoWeb" ColumnName="EstoqueMinimoWeb" />
+          <ScalarProperty Name="EstoqueMaximoColetor" ColumnName="EstoqueMaximoColetor" />
+          <ScalarProperty Name="EstoqueMinimoColetor" ColumnName="EstoqueMinimoColetor" />
+          <ScalarProperty Name="TempoDadosServidorDias" ColumnName="TempoDadosServidorDias" />
+          <ScalarProperty Name="TempoVerificaERPDias" ColumnName="TempoVerificaERPDias" />
+          <ScalarProperty Name="VersaoBaseCorreio" ColumnName="VersaoBaseCorreio" />
+          <ScalarProperty Name="TempoEntrevistaColetor" ColumnName="TempoEntrevistaColetor" />
+          <ScalarProperty Name="TempoEntrevistaIncompleta" ColumnName="TempoEntrevistaIncompleta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPerfil">
+      <EntityTypeMapping TypeName="SINAFModel.TPerfil">
+        <MappingFragment StoreEntitySet="TPerfil">
+          <ScalarProperty Name="IDPerfil" ColumnName="IDPerfil" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPerfilCargo">
+      <EntityTypeMapping TypeName="SINAFModel.TPerfilCargo">
+        <MappingFragment StoreEntitySet="TPerfilCargo">
+          <ScalarProperty Name="IDPerfilCargo" ColumnName="IDPerfilCargo" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPlanoCasal">
+      <EntityTypeMapping TypeName="SINAFModel.TPlanoCasal">
+        <MappingFragment StoreEntitySet="TPlanoCasal">
+          <ScalarProperty Name="IDPlanoCasal" ColumnName="IDPlanoCasal" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NomePlano" ColumnName="NomePlano" />
+          <ScalarProperty Name="CoberturaMorte" ColumnName="CoberturaMorte" />
+          <ScalarProperty Name="CoberturaConjuge" ColumnName="CoberturaConjuge" />
+          <ScalarProperty Name="Premio_61_65" ColumnName="Premio_61_65" />
+          <ScalarProperty Name="Premio_66_70" ColumnName="Premio_66_70" />
+          <ScalarProperty Name="Premio_71_75" ColumnName="Premio_71_75" />
+          <ScalarProperty Name="Premio_76_80" ColumnName="Premio_76_80" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPlanoCasalFuneral">
+      <EntityTypeMapping TypeName="SINAFModel.TPlanoCasalFuneral">
+        <MappingFragment StoreEntitySet="TPlanoCasalFuneral">
+          <ScalarProperty Name="IDPlanoCasalFuneral" ColumnName="IDPlanoCasalFuneral" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Ate_20" ColumnName="Ate_20" />
+          <ScalarProperty Name="De_21_40" ColumnName="De_21_40" />
+          <ScalarProperty Name="De_41_50" ColumnName="De_41_50" />
+          <ScalarProperty Name="De_51_60" ColumnName="De_51_60" />
+          <ScalarProperty Name="De_61_65" ColumnName="De_61_65" />
+          <ScalarProperty Name="De_66_70" ColumnName="De_66_70" />
+          <ScalarProperty Name="De_71_75" ColumnName="De_71_75" />
+          <ScalarProperty Name="De_76_80" ColumnName="De_76_80" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPlanoProtecao">
+      <EntityTypeMapping TypeName="SINAFModel.TPlanoProtecao">
+        <MappingFragment StoreEntitySet="TPlanoProtecao">
+          <ScalarProperty Name="IDPlanoProtecao" ColumnName="IDPlanoProtecao" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="CoberturaMorte" ColumnName="CoberturaMorte" />
+          <ScalarProperty Name="CoberturaAcidente" ColumnName="CoberturaAcidente" />
+          <ScalarProperty Name="CoberturaEmergencia" ColumnName="CoberturaEmergencia" />
+          <ScalarProperty Name="Premio_18_30" ColumnName="Premio_18_30" />
+          <ScalarProperty Name="Premio_31_40" ColumnName="Premio_31_40" />
+          <ScalarProperty Name="Premio_41_45" ColumnName="Premio_41_45" />
+          <ScalarProperty Name="Premio_46_50" ColumnName="Premio_46_50" />
+          <ScalarProperty Name="Premio_51_55" ColumnName="Premio_51_55" />
+          <ScalarProperty Name="Premio_56_60" ColumnName="Premio_56_60" />
+          <ScalarProperty Name="Premio_61_65" ColumnName="Premio_61_65" />
+          <ScalarProperty Name="NomePlano" ColumnName="NomePlano" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPlanoProtecaoFuneral">
+      <EntityTypeMapping TypeName="SINAFModel.TPlanoProtecaoFuneral">
+        <MappingFragment StoreEntitySet="TPlanoProtecaoFuneral">
+          <ScalarProperty Name="IDPlanoProtecaoFuneral" ColumnName="IDPlanoProtecaoFuneral" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Ate_20" ColumnName="Ate_20" />
+          <ScalarProperty Name="De_21_40" ColumnName="De_21_40" />
+          <ScalarProperty Name="De_41_50" ColumnName="De_41_50" />
+          <ScalarProperty Name="De_51_60" ColumnName="De_51_60" />
+          <ScalarProperty Name="De_61_65" ColumnName="De_61_65" />
+          <ScalarProperty Name="De_66_70" ColumnName="De_66_70" />
+          <ScalarProperty Name="De_71_75" ColumnName="De_71_75" />
+          <ScalarProperty Name="De_76_80" ColumnName="De_76_80" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPlanoProtecaoRenda">
+      <EntityTypeMapping TypeName="SINAFModel.TPlanoProtecaoRenda">
+        <MappingFragment StoreEntitySet="TPlanoProtecaoRenda">
+          <ScalarProperty Name="IDPlanoProtecaoRenda" ColumnName="IDPlanoProtecaoRenda" />
+          <ScalarProperty Name="RendaPeriodo" ColumnName="RendaPeriodo" />
+          <ScalarProperty Name="CoberturaRendaMensal" ColumnName="CoberturaRendaMensal" />
+          <ScalarProperty Name="CoberturaCapitalTotal" ColumnName="CoberturaCapitalTotal" />
+          <ScalarProperty Name="Premio_18_30" ColumnName="Premio_18_30" />
+          <ScalarProperty Name="Premio_31_40" ColumnName="Premio_31_40" />
+          <ScalarProperty Name="Premio_41_45" ColumnName="Premio_41_45" />
+          <ScalarProperty Name="Premio_46_50" ColumnName="Premio_46_50" />
+          <ScalarProperty Name="Premio_51_55" ColumnName="Premio_51_55" />
+          <ScalarProperty Name="Premio_56_60" ColumnName="Premio_56_60" />
+          <ScalarProperty Name="Premio_61_65" ColumnName="Premio_61_65" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPlanoSenior">
+      <EntityTypeMapping TypeName="SINAFModel.TPlanoSenior">
+        <MappingFragment StoreEntitySet="TPlanoSenior">
+          <ScalarProperty Name="IDPlanoSenior" ColumnName="IDPlanoSenior" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NomePlano" ColumnName="NomePlano" />
+          <ScalarProperty Name="CoberturaMorte" ColumnName="CoberturaMorte" />
+          <ScalarProperty Name="Premio_61_65" ColumnName="Premio_61_65" />
+          <ScalarProperty Name="Premio_66_70" ColumnName="Premio_66_70" />
+          <ScalarProperty Name="Premio_71_75" ColumnName="Premio_71_75" />
+          <ScalarProperty Name="Premio_76_80" ColumnName="Premio_76_80" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPlanoSeniorFuneral">
+      <EntityTypeMapping TypeName="SINAFModel.TPlanoSeniorFuneral">
+        <MappingFragment StoreEntitySet="TPlanoSeniorFuneral">
+          <ScalarProperty Name="IDPlanoSeniorFuneral" ColumnName="IDPlanoSeniorFuneral" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Ate_20" ColumnName="Ate_20" />
+          <ScalarProperty Name="De_21_40" ColumnName="De_21_40" />
+          <ScalarProperty Name="De_41_50" ColumnName="De_41_50" />
+          <ScalarProperty Name="De_51_60" ColumnName="De_51_60" />
+          <ScalarProperty Name="De_61_65" ColumnName="De_61_65" />
+          <ScalarProperty Name="De_66_70" ColumnName="De_66_70" />
+          <ScalarProperty Name="De_71_75" ColumnName="De_71_75" />
+          <ScalarProperty Name="De_76_80" ColumnName="De_76_80" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TProfissao">
+      <EntityTypeMapping TypeName="SINAFModel.TProfissao">
+        <MappingFragment StoreEntitySet="TProfissao">
+          <ScalarProperty Name="IDProfissao" ColumnName="IDProfissao" />
+          <ScalarProperty Name="NomeProfissao" ColumnName="NomeProfissao" />
+          <ScalarProperty Name="CapitalLimitado" ColumnName="CapitalLimitado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUsuario">
+      <EntityTypeMapping TypeName="SINAFModel.TUsuario">
+        <MappingFragment StoreEntitySet="TUsuario">
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Senha" ColumnName="Senha" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CodigoColaborador" ColumnName="CodigoColaborador" />
+          <ScalarProperty Name="Unidade" ColumnName="Unidade" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+          <ScalarProperty Name="Abreviado" ColumnName="Abreviado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_HistoricoTSincronismo_HistoricoTColetor" TypeName="SINAFModel.FK_HistoricoTSincronismo_HistoricoTColetor" StoreEntitySet="HistoricoTSincronismo">
+      <EndProperty Name="HistoricoTColetor">
+        <ScalarProperty Name="IDHistoricoColetor" ColumnName="IDHistoricoColetor" />
+      </EndProperty>
+      <EndProperty Name="HistoricoTSincronismo">
+        <ScalarProperty Name="IDHistoricoSincronismo" ColumnName="IDHistoricoSincronismo" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_HistoricoTEntrevistaDownload_HistoricoTSincronismo" TypeName="SINAFModel.FK_HistoricoTEntrevistaDownload_HistoricoTSincronismo" StoreEntitySet="HistoricoTEntrevistaDownload">
+      <EndProperty Name="HistoricoTSincronismo">
+        <ScalarProperty Name="IDHistoricoSincronismo" ColumnName="IDHistoricoSincronismo" />
+      </EndProperty>
+      <EndProperty Name="HistoricoTEntrevistaDownload">
+        <ScalarProperty Name="IDHistoricoEntrevistaDownload" ColumnName="IDHistoricoEntrevistaDownload" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_HistoricoTEntrevistaUpload_HistoricoTSincronismo" TypeName="SINAFModel.FK_HistoricoTEntrevistaUpload_HistoricoTSincronismo" StoreEntitySet="HistoricoTEntrevistaUpload">
+      <EndProperty Name="HistoricoTSincronismo">
+        <ScalarProperty Name="IDHistoricoSincronismo" ColumnName="IDHistoricoSincronismo" />
+      </EndProperty>
+      <EndProperty Name="HistoricoTEntrevistaUpload">
+        <ScalarProperty Name="IDHistoricoEntrevistaUpload" ColumnName="IDHistoricoEntrevistaUpload" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_HistoricoTSincronismo_TUsuario" TypeName="SINAFModel.FK_HistoricoTSincronismo_TUsuario" StoreEntitySet="HistoricoTSincronismo">
+      <EndProperty Name="TUsuario">
+        <ScalarProperty Name="IDUsuario" ColumnName="IDVendedor" />
+      </EndProperty>
+      <EndProperty Name="HistoricoTSincronismo">
+        <ScalarProperty Name="IDHistoricoSincronismo" ColumnName="IDHistoricoSincronismo" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TAgendamento_TAtendimento" TypeName="SINAFModel.FK_TAgendamento_TAtendimento" StoreEntitySet="TAgendamento">
+      <EndProperty Name="TAtendimento">
+        <ScalarProperty Name="IDAtendimento" ColumnName="IDAtendimento" />
+      </EndProperty>
+      <EndProperty Name="TAgendamento">
+        <ScalarProperty Name="IDAgendamento" ColumnName="IDAgendamento" />
+      </EndProperty>
+      <Condition ColumnName="IDAtendimento" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TAgendamento_TUsuario" TypeName="SINAFModel.FK_TAgendamento_TUsuario" StoreEntitySet="TAgendamento">
+      <EndProperty Name="TUsuario">
+        <ScalarProperty Name="IDUsuario" ColumnName="IDUsuarioAgendamento" />
+      </EndProperty>
+      <EndProperty Name="TAgendamento">
+        <ScalarProperty Name="IDAgendamento" ColumnName="IDAgendamento" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TAgendamento_TUsuario1" TypeName="SINAFModel.FK_TAgendamento_TUsuario1" StoreEntitySet="TAgendamento">
+      <EndProperty Name="TUsuario">
+        <ScalarProperty Name="IDUsuario" ColumnName="IDUsuarioVendedor" />
+      </EndProperty>
+      <EndProperty Name="TAgendamento">
+        <ScalarProperty Name="IDAgendamento" ColumnName="IDAgendamento" />
+      </EndProperty>
+      <Condition ColumnName="IDUsuarioVendedor" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TAtendimento_TFilial" TypeName="SINAFModel.FK_TAtendimento_TFilial" StoreEntitySet="TAtendimento">
+      <EndProperty Name="TFilial">
+        <ScalarProperty Name="IDFilial" ColumnName="IDFilial" />
+      </EndProperty>
+      <EndProperty Name="TAtendimento">
+        <ScalarProperty Name="IDAtendimento" ColumnName="IDAtendimento" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TBairro_FK" TypeName="SINAFModel.TBairro_FK" StoreEntitySet="TLogradouro">
+      <EndProperty Name="TBairro">
+        <ScalarProperty Name="IDBairro" ColumnName="IDBairro" />
+      </EndProperty>
+      <EndProperty Name="TLogradouro">
+        <ScalarProperty Name="IDLogradouro" ColumnName="IDLogradouro" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TCidade_FK" TypeName="SINAFModel.TCidade_FK" StoreEntitySet="TBairro">
+      <EndProperty Name="TCidade">
+        <ScalarProperty Name="IDCidade" ColumnName="IDCidade" />
+      </EndProperty>
+      <EndProperty Name="TBairro">
+        <ScalarProperty Name="IDBairro" ColumnName="IDBairro" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TCidade_LOGFK" TypeName="SINAFModel.TCidade_LOGFK" StoreEntitySet="TLogradouro">
+      <EndProperty Name="TCidade">
+        <ScalarProperty Name="IDCidade" ColumnName="IDCidade" />
+      </EndProperty>
+      <EndProperty Name="TLogradouro">
+        <ScalarProperty Name="IDLogradouro" ColumnName="IDLogradouro" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TEstado_FK" TypeName="SINAFModel.TEstado_FK" StoreEntitySet="TCidade">
+      <EndProperty Name="TEstado">
+        <ScalarProperty Name="IDEstado" ColumnName="IDEstado" />
+      </EndProperty>
+      <EndProperty Name="TCidade">
+        <ScalarProperty Name="IDCidade" ColumnName="IDCidade" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TFaixa_TUsuario" TypeName="SINAFModel.FK_TFaixa_TUsuario" StoreEntitySet="TFaixa">
+      <EndProperty Name="TUsuario">
+        <ScalarProperty Name="IDUsuario" ColumnName="IDResponsavel" />
+      </EndProperty>
+      <EndProperty Name="TFaixa">
+        <ScalarProperty Name="IDFaixa" ColumnName="IDFaixa" />
+      </EndProperty>
+      <Condition ColumnName="IDResponsavel" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TLog_TUsuario" TypeName="SINAFModel.FK_TLog_TUsuario" StoreEntitySet="TLog">
+      <EndProperty Name="TUsuario">
+        <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+      </EndProperty>
+      <EndProperty Name="TLog">
+        <ScalarProperty Name="IDLog" ColumnName="IDLog" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TMenuPerfil_TMenu" TypeName="SINAFModel.FK_TMenuPerfil_TMenu" StoreEntitySet="TMenuPerfil">
+      <EndProperty Name="TMenu">
+        <ScalarProperty Name="IDMenu" ColumnName="IDMenu" />
+      </EndProperty>
+      <EndProperty Name="TMenuPerfil">
+        <ScalarProperty Name="IDMenuPerfil" ColumnName="IDMenuPerfil" />
+      </EndProperty>
+      <Condition ColumnName="IDMenu" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TMenuPerfil_TPerfil" TypeName="SINAFModel.FK_TMenuPerfil_TPerfil" StoreEntitySet="TMenuPerfil">
+      <EndProperty Name="TPerfil">
+        <ScalarProperty Name="IDPerfil" ColumnName="IDPerfil" />
+      </EndProperty>
+      <EndProperty Name="TMenuPerfil">
+        <ScalarProperty Name="IDMenuPerfil" ColumnName="IDMenuPerfil" />
+      </EndProperty>
+      <Condition ColumnName="IDPerfil" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TPerfilCargo_TPerfil" TypeName="SINAFModel.FK_TPerfilCargo_TPerfil" StoreEntitySet="TPerfilCargo">
+      <EndProperty Name="TPerfil">
+        <ScalarProperty Name="IDPerfil" ColumnName="IDPerfil" />
+      </EndProperty>
+      <EndProperty Name="TPerfilCargo">
+        <ScalarProperty Name="IDPerfilCargo" ColumnName="IDPerfilCargo" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TUsuario_TPerfil" TypeName="SINAFModel.FK_TUsuario_TPerfil" StoreEntitySet="TUsuario">
+      <EndProperty Name="TPerfil">
+        <ScalarProperty Name="IDPerfil" ColumnName="IDPerfil" />
+      </EndProperty>
+      <EndProperty Name="TUsuario">
+        <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

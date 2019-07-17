@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[TFilial] (
+    [IDFilial]   INT           IDENTITY (1, 1) NOT NULL,
+    [NomeFilial] VARCHAR (250) NOT NULL,
+    CONSTRAINT [PK_TFilial_1] PRIMARY KEY CLUSTERED ([IDFilial] ASC) WITH (STATISTICS_NORECOMPUTE = ON)
+);
+

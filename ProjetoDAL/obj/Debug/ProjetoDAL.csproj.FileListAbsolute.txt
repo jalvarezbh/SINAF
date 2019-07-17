@@ -1,0 +1,8 @@
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\bin\Debug\ProjetoDAL.dll.config
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\bin\Debug\ProjetoDAL.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\bin\Debug\ProjetoDAL.pdb
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\bin\Debug\ProjetoVO.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\bin\Debug\ProjetoVO.pdb
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\obj\Debug\ProjetoDAL.csprojResolveAssemblyReference.cache
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\obj\Debug\ProjetoDAL.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoDAL\obj\Debug\ProjetoDAL.pdb

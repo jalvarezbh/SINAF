@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\wwwroot\SINAF</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.pdb">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="bin/ErikEJ.SqlCe.dll">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="bin/FTP_Windows.dll">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>06/13/2016 10:32:00</publishTime>
+    </File>
+    <File Include="bin/ProjetoController.dll">
+      <publishTime>06/13/2016 11:14:03</publishTime>
+    </File>
+    <File Include="bin/ProjetoController.pdb">
+      <publishTime>11/13/2015 11:32:57</publishTime>
+    </File>
+    <File Include="bin/ProjetoDAL.dll">
+      <publishTime>06/13/2016 11:14:02</publishTime>
+    </File>
+    <File Include="bin/ProjetoDAL.pdb">
+      <publishTime>11/13/2015 11:32:56</publishTime>
+    </File>
+    <File Include="bin/ProjetoVO.dll">
+      <publishTime>06/13/2016 11:14:01</publishTime>
+    </File>
+    <File Include="bin/ProjetoVO.pdb">
+      <publishTime>11/13/2015 11:32:55</publishTime>
+    </File>
+    <File Include="bin/ProjetoWeb.dll">
+      <publishTime>06/29/2016 15:13:45</publishTime>
+    </File>
+    <File Include="bin/ProjetoWeb.pdb">
+      <publishTime>11/13/2015 11:35:47</publishTime>
+    </File>
+    <File Include="bin/WebControls.dll">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="bin/WebControls.pdb">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="bloqueioColetor.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="cadastroAgendamento.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="cadastroColetor.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="cadastroFilial.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="cadastroParametro.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="cadastroPerfilCargo.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="cadastroPlano.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="cadastroSenha.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="cadastroVendedorColetor.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="consultaAgendamento.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="consultaColetor.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="Controle/Bloqueio.ascx">
+      <publishTime>05/18/2015 19:45:44</publishTime>
+    </File>
+    <File Include="Controle/Menu.ascx">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Controle/MenuTreeView.xslt">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Controle/SimuladorPlanoTela1.ascx">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="DLL/AjaxControlToolkit.dll">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="DLL/ErikEJ.SqlCe.dll">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="DLL/FTP_Windows.dll">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="DLL/log4net.dll">
+      <publishTime>06/13/2016 10:32:00</publishTime>
+    </File>
+    <File Include="DLL/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>11/18/2015 09:27:25</publishTime>
+    </File>
+    <File Include="DLL/System.Data.SqlServerCe.dll">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="DLL/WebControls.dll">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="downloadArquivo.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="exibeRelatorio.aspx">
+      <publishTime>04/28/2016 09:50:59</publishTime>
+    </File>
+    <File Include="filtroHistoricoSimulador.aspx">
+      <publishTime>04/28/2016 09:50:59</publishTime>
+    </File>
+    <File Include="filtroVendedorColetor.aspx">
+      <publishTime>04/28/2016 09:50:59</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/accept20.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/accept28.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/add20.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/Agua.jpg">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/back28.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/coletor32.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/Conteudo.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/ConteudoDireita.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/ConteudoEsquerda.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/down28.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/download32.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/Fundo.jpg">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/ImageButtonAdicionar.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/ImageButtonPesquisar.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/ImageButtonSalvar.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/ImageButtonVoltar.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/info20.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/lock20.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/lock_off20.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/logo64.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/logo90.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/LogoCliente.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/Menu.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/MenuDireita.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/MenuEsquerda.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/note_editGrid.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/note_removeGrid.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/processando6.gif">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/repeat32.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/search14.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/sinafemail.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/upload32.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Images/vendedor32.ico">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="login.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="relatorioColetor.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="Reports/HistoricoSimulador.rdlc">
+      <publishTime>04/28/2016 09:50:58</publishTime>
+    </File>
+    <File Include="Reports/VendedorColetor.rdlc">
+      <publishTime>04/28/2016 09:50:58</publishTime>
+    </File>
+    <File Include="Scripts/autoCurrency.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/images/ui-icons_222222_256x240.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery-ui.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.accordion.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.all.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.autocomplete.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.base.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.button.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.core.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.datepicker.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.dialog.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.progressbar.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.resizable.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.selectable.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.slider.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.tabs.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/css/jquery.ui.theme.css">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.6.4.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.0.0.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.0.0.min.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-timepicker-addon.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.min.1.7.2.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.min.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.blockUI.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.cycle.lite.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.jgrowl_minimized.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.mask.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.min.1.5.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.simplemodal.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui/jquery-ui-1.8.16.custom.min.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui/jquery.ui.core.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui/jquery.ui.datepicker.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui/jquery.ui.mouse.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui/jquery.ui.sortable.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui/jquery.ui.widget.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Scripts/WebControls.aspx">
+      <publishTime>04/28/2016 11:25:08</publishTime>
+    </File>
+    <File Include="Scripts/WebControls.js">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Service/SyncColetor.asmx">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Service/SyncSINAF.asmx">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="simuladorPlano.aspx">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Styles/Principal.css">
+      <publishTime>04/28/2016 09:50:58</publishTime>
+    </File>
+    <File Include="Template/EmailEsqueceuSenha.htm">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Template/ExemploTemplatePlanoFamilia.xls">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Template/ExemploTemplatePlanoSenior.xls">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Template/ExemploTemplatePlanoSeniorCasal.xls">
+      <publishTime>05/18/2015 19:45:45</publishTime>
+    </File>
+    <File Include="Template/TemplateFilial.xls">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="Template/TemplatePlanoFamilia.xls">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="Template/TemplatePlanoSenior.xls">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="Template/TemplatePlanoSeniorCasal.xls">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="UPDATE/1_0_3_0.txt">
+      <publishTime>04/28/2016 09:50:58</publishTime>
+    </File>
+    <File Include="UPDATE/1_0_3_3.txt">
+      <publishTime>04/28/2016 14:55:09</publishTime>
+    </File>
+    <File Include="UPDATE/ProjetoInstall.CAB">
+      <publishTime>05/18/2015 19:45:46</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/29/2016 15:13:47</publishTime>
+    </File>
+    <File Include="WebForm1.aspx">
+      <publishTime>06/13/2016 11:13:54</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

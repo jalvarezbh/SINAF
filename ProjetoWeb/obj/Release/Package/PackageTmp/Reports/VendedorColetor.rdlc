@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>6cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>4cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>4cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>4.5cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.6cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox4">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Vendedor</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox4</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#223d76</BackgroundColor>
+                        <PaddingLeft>10pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox6">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Coletor</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox6</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#223d76</BackgroundColor>
+                        <PaddingLeft>4pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox8">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Data Associação</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox8</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#223d76</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox12">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Data Último Sincronismo</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox12</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#223d76</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.6cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="NomeVendedor">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!NomeVendedor.Value</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>NomeVendedor</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>10pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="NumeroSerie">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!NumeroSerie.Value</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>NumeroSerie</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>4pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="DataCadastro">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!DataCadastro.Value</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>DataCadastro</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="DataUltimaSincronizacao">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!DataUltimaSincronizacao.Value</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>DataUltimaSincronizacao</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Details" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>VendedorColetor</DataSetName>
+        <Height>1.2cm</Height>
+        <Width>18.5cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>1.2cm</Height>
+    <Style />
+  </Body>
+  <Width>18.5cm</Width>
+  <Page>
+    <PageHeader>
+      <Height>2cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Image Name="Cliente">
+          <Source>Embedded</Source>
+          <Value>LogoCliente</Value>
+          <Top>0.3cm</Top>
+          <Left>0.3cm</Left>
+          <Height>1.29646cm</Height>
+          <Width>3.01625cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+        <Textbox Name="txtTitulo">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Relatório de Associação </Value>
+                  <Style>
+                    <FontSize>18pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <Color>#223d76</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <Top>0.3cm</Top>
+          <Left>4cm</Left>
+          <Height>1.4cm</Height>
+          <Width>14cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="ProjetoController">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>53161de3-de91-47fd-b5f5-af369eef2992</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="VendedorColetor">
+      <Query>
+        <DataSourceName>ProjetoController</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="IDColetor">
+          <DataField>IDColetor</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NumeroSerie">
+          <DataField>NumeroSerie</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IMEI">
+          <DataField>IMEI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fabricante">
+          <DataField>Fabricante</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Modelo">
+          <DataField>Modelo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IDUsuarioResponsavel">
+          <DataField>IDUsuarioResponsavel</DataField>
+          <rd:TypeName>System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="IDUsuarioCadastro">
+          <DataField>IDUsuarioCadastro</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NomeUsuarioResponsavel">
+          <DataField>NomeUsuarioResponsavel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NomeUsuarioCadastro">
+          <DataField>NomeUsuarioCadastro</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DataCadastro">
+          <DataField>DataCadastro</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Ativo">
+          <DataField>Ativo</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="GridAtivo">
+          <DataField>GridAtivo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ConsultaAtivo">
+          <DataField>ConsultaAtivo</DataField>
+          <rd:TypeName>System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="DataInativacao">
+          <DataField>DataInativacao</DataField>
+          <rd:TypeName>System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="UsoBackup">
+          <DataField>UsoBackup</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="GridUsoBackup">
+          <DataField>GridUsoBackup</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ConsultaUsoBackup">
+          <DataField>ConsultaUsoBackup</DataField>
+          <rd:TypeName>System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="MotivoInativacao">
+          <DataField>MotivoInativacao</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DataUltimaSincronizacao">
+          <DataField>DataUltimaSincronizacao</DataField>
+          <rd:TypeName>System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="DataInativacaoInicio">
+          <DataField>DataInativacaoInicio</DataField>
+          <rd:TypeName>System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="DataInativacaoFim">
+          <DataField>DataInativacaoFim</DataField>
+          <rd:TypeName>System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="DataUltimaSincronizacaoInicio">
+          <DataField>DataUltimaSincronizacaoInicio</DataField>
+          <rd:TypeName>System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="DataUltimaSincronizacaoFim">
+          <DataField>DataUltimaSincronizacaoFim</DataField>
+          <rd:TypeName>System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="IDColetorIDVendedor">
+          <DataField>IDColetorIDVendedor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DataRelatorioInicio">
+          <DataField>DataRelatorioInicio</DataField>
+          <rd:TypeName>System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="DataRelatorioFinal">
+          <DataField>DataRelatorioFinal</DataField>
+          <rd:TypeName>System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="NomeVendedor">
+          <DataField>NomeVendedor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UnidadeVendedor">
+          <DataField>UnidadeVendedor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NumeroFaixaCarregadas">
+          <DataField>NumeroFaixaCarregadas</DataField>
+          <rd:TypeName>System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="TodasFaixaCarregadas">
+          <DataField>TodasFaixaCarregadas</DataField>
+          <rd:TypeName>System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="IDUsuarioVendedor">
+          <DataField>IDUsuarioVendedor</DataField>
+          <rd:TypeName>System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>ProjetoController</rd:DataSetName>
+        <rd:TableName>TColetorCONTROLLER</rd:TableName>
+        <rd:ObjectDataSourceSelectMethod>ListarRelatorioVendedorColetor</rd:ObjectDataSourceSelectMethod>
+        <rd:ObjectDataSourceSelectMethodSignature>System.Collections.Generic.List`1[ProjetoVO.TColetorVO] ListarRelatorioVendedorColetor(ProjetoVO.TColetorVO)</rd:ObjectDataSourceSelectMethodSignature>
+        <rd:ObjectDataSourceType>ProjetoController.TColetorCONTROLLER, ProjetoController, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="LogoCliente">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>4153293c-55b1-4513-bd40-5bda2af07494</rd:ReportID>
+</Report>

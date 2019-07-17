@@ -1,0 +1,5 @@
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoVO\bin\Debug\ProjetoVO.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoVO\bin\Debug\ProjetoVO.pdb
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoVO\obj\Debug\ProjetoVO.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoVO\obj\Debug\ProjetoVO.pdb
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoVO\obj\Debug\ProjetoVO.csprojResolveAssemblyReference.cache

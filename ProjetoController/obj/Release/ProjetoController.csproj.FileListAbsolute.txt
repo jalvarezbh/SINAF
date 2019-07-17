@@ -1,0 +1,11 @@
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoController\bin\Release\ProjetoController.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoController\bin\Release\ProjetoController.pdb
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoController\bin\Release\ProjetoDAL.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoController\bin\Release\ProjetoVO.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoController\bin\Release\WebControls.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoController\bin\Release\ProjetoDAL.pdb
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoController\bin\Release\ProjetoVO.pdb
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoController\bin\Release\WebControls.pdb
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoController\obj\Release\ProjetoController.csprojResolveAssemblyReference.cache
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoController\obj\Release\ProjetoController.dll
+C:\Cabtec\SINAF\FONTE\SINAF\ProjetoController\obj\Release\ProjetoController.pdb

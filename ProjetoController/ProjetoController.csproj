@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1534CE9-052D-476B-B5A0-C89968AFA43F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetoController</RootNamespace>
+    <AssemblyName>ProjetoController</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProjetoWeb\DLL\WebControls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HistoricoTColetorCONTROLLER.cs" />
+    <Compile Include="HistoricoTEntrevistaDownloadCONTROLLER.cs" />
+    <Compile Include="HistoricoTEntrevistaUploadCONTROLLER.cs" />
+    <Compile Include="HistoricoTSincronismoCONTROLLER.cs" />
+    <Compile Include="MobileTSimuladorProdutoCONTROLLER.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TAgendamentoCONTROLLER.cs" />
+    <Compile Include="TAtendimentoCONTROLLER.cs" />
+    <Compile Include="TColetorCONTROLLER.cs" />
+    <Compile Include="TEstadoCONTROLLER.cs" />
+    <Compile Include="TLogradouroCONTROLLER.cs" />
+    <Compile Include="TMenuCONTROLLER.cs" />
+    <Compile Include="TMenuPerfilCONTROLLER.cs" />
+    <Compile Include="TParametroCONTROLLER.cs" />
+    <Compile Include="TPerfilCONTROLLER.cs" />
+    <Compile Include="TPlanoCasalCONTROLLER.cs" />
+    <Compile Include="TPlanoCONTROLLER.cs" />
+    <Compile Include="TPlanoProtecaoCONTROLLER.cs" />
+    <Compile Include="TPlanoSeniorCONTROLLER.cs" />
+    <Compile Include="TUsuarioCONTROLLER.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoDAL\ProjetoDAL.csproj">
+      <Project>{7688F492-007D-49E8-9210-DB11F5B690AE}</Project>
+      <Name>ProjetoDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjetoVO\ProjetoVO.csproj">
+      <Project>{3EC2539C-9193-4EB4-89E3-1C419CDC2679}</Project>
+      <Name>ProjetoVO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
